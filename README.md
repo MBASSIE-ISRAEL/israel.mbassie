@@ -1,6 +1,6 @@
 # Israel M’BASSIE
 
-Étudiant en Master Intelligence Artificielle et Management à IA School  
+Étudiant en fin de formation en Dathttps://github.com/MBASSIE-ISRAEL/israel.mbassie/tree/maina Science 
 Paris, France  
 Data Analyst / Data Scientist Junior  
 Email : israelmbassie02@gmail.com | Téléphone : 07 81 08 71 01  
