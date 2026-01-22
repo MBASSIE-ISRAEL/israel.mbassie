@@ -1,6 +1,6 @@
 # Israel M’BASSIE
 
-Étudiant en fin de formation en Dathttps://github.com/MBASSIE-ISRAEL/israel.mbassie/tree/maina Science 
+Étudiant en fin de formation en Data Science  
 Paris, France  
 Data Analyst / Data Scientist Junior  
 Email : israelmbassie02@gmail.com | Téléphone : 07 81 08 71 01  
