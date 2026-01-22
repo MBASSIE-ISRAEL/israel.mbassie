@@ -109,8 +109,8 @@ Je combine une double compétence :
 
 ## Langues
 
-- Français — Langue maternelle  
-- Anglais — Niveau B2 (compétence professionnelle)
+- Français : Langue maternelle  
+- Anglais : Niveau B2 (compétence professionnelle)
 
 ---
 
