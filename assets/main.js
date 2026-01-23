@@ -68,13 +68,10 @@
 
       eduEslscaDates: "oct 2025 – actuellement",
       eduEslscaProgram: "MBA Data Finance Performance",
-      eduEslscaCourses: "Matières clés : Data Visualisation, Modélisation financière, Machine Learning, Data Analytics, Data Management et Gouvernance de la donnée.",
       eduIasDates: "sept 2023 – sept 2025",
       eduIasProgram: "Mastère Management de Projet & Data",
-      eduIasCourses: "Matières clés : Python, Machine Learning, SQL, Analyse de données, Probabilités, Modélisation et analyse de données, Data Pipelines.",
       eduIuaDates: "déc 2019 – sept 2022",
-      eduIuaProgram: "Licence en Mathématiques Appliquées — option Actuariat",
-      eduIuaCourses: "Matières clés : Statistiques, Probabilités, Modélisation mathématiques, Programmation orientée objet."
+      eduIuaProgram: "Licence en Mathématiques Appliquées — option Actuariat"
     },
 
     en: {
@@ -137,13 +134,10 @@
 
       eduEslscaDates: "Oct 2025 – Present",
       eduEslscaProgram: "MBA Data Finance Performance",
-      eduEslscaCourses: "Key modules: Data Visualization, Financial Modeling, Machine Learning, Data Analytics, Data Management and Data Governance.",
       eduIasDates: "Sep 2023 – Sep 2025",
       eduIasProgram: "Master’s in Project Management & Data",
-      eduIasCourses: "Key modules: Python, Machine Learning, SQL, Data Analysis, Probability, Modeling & Data Analytics, Data Pipelines.",
       eduIuaDates: "Dec 2019 – Sep 2022",
-      eduIuaProgram: "BSc in Applied Mathematics — Actuarial track",
-      eduIuaCourses: "Key modules: Statistics, Probability, Mathematical Modeling, Object-Oriented Programming."
+      eduIuaProgram: "BSc in Applied Mathematics — Actuarial track"
     }
   };
 
@@ -165,8 +159,14 @@
     const icon = themeBtn.querySelector("i");
     const label = themeBtn.querySelector("span");
     const isDark = theme === "dark";
+
     if (icon) icon.className = isDark ? "fa-solid fa-sun" : "fa-solid fa-moon";
-    if (label) label.textContent = isDark ? (root.lang === "fr" ? "Clair" : "Light") : (root.lang === "fr" ? "Sombre" : "Dark");
+    const currentLang = root.getAttribute("lang") || "fr";
+    if (label) {
+      label.textContent = isDark
+        ? (currentLang === "fr" ? "Clair" : "Light")
+        : (currentLang === "fr" ? "Sombre" : "Dark");
+    }
   }
 
   function applyTheme(theme) {
