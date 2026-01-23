@@ -44,7 +44,7 @@
           </div>
 
           <button class="btn btn-sm btn-outline-secondary" id="themeToggle" type="button">
-            <i class="fa-solid fa-moon"></i><span class="ms-2" data-i18n="darkMode">Dark</span>
+            <i class="fa-solid fa-moon"></i><span class="ms-2" data-i18n="darkMode">Sombre</span>
           </button>
 
           <a class="btn btn-sm btn-success"
@@ -78,6 +78,7 @@
         <!-- Sidebar LEFT -->
         <aside class="col-lg-4 order-lg-1 sidebar">
 
+          <!-- Infos -->
           <section class="cardx p-4">
             <h2 class="section-title" data-i18n="info">Infos</h2>
             <ul class="list-unstyled mb-0">
@@ -91,6 +92,7 @@
             </ul>
           </section>
 
+          <!-- Compétences -->
           <section class="cardx p-4 mt-4">
             <h2 class="section-title" data-i18n="skills">Compétences</h2>
 
@@ -137,9 +139,75 @@
                 <img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=000" />
               </div>
             </div>
-
           </section>
 
+          <!-- Formation (SOUS compétences) -->
+          <section id="education" class="cardx p-4 mt-4">
+            <h2 class="section-title" data-i18n="education">Formation</h2>
+
+            <div class="edu-mini">
+              <img src="img/eslsca_mba.jpg" alt="ESLSCA" class="edu-mini-logo">
+              <div>
+                <div class="edu-mini-title">ESLSCA Business School</div>
+                <div class="edu-mini-meta" data-i18n="eduEslscaDates">oct 2025 – actuellement</div>
+                <div class="edu-mini-program" data-i18n="eduEslscaProgram">MBA Data Finance Performance</div>
+                <span class="badge badge-soft mt-2" data-i18n="inProgress">En cours</span>
+              </div>
+            </div>
+
+            <hr class="divider my-3">
+
+            <div class="edu-mini">
+              <img src="img/ia_school_master.jpg" alt="IA School" class="edu-mini-logo">
+              <div>
+                <div class="edu-mini-title">IA School (Nexa Digital School)</div>
+                <div class="edu-mini-meta" data-i18n="eduIasDates">sept 2023 – sept 2025</div>
+                <div class="edu-mini-program" data-i18n="eduIasProgram">Mastère Management de Projet & Data</div>
+                <a class="btn btn-sm btn-outline-primary mt-2"
+                   href="https://drive.google.com/file/d/1OQnAzpGqfuzEVnek0SbpFgQWAxSbvzMM/view"
+                   target="_blank" rel="noopener" data-i18n="viewDiploma">Voir diplôme</a>
+              </div>
+            </div>
+
+            <hr class="divider my-3">
+
+            <div class="edu-mini">
+              <img src="img/iua_licence.jpg" alt="IUA" class="edu-mini-logo">
+              <div>
+                <div class="edu-mini-title">Institut Universitaire d'Abidjan</div>
+                <div class="edu-mini-meta" data-i18n="eduIuaDates">déc 2019 – sept 2022</div>
+                <div class="edu-mini-program" data-i18n="eduIuaProgram">Licence en Mathématiques Appliquées — option Actuariat</div>
+                <a class="btn btn-sm btn-outline-primary mt-2"
+                   href="https://drive.google.com/file/d/1xvfXWHWnsRce-0T0TXfFwUCTAU7v7uvE/view"
+                   target="_blank" rel="noopener" data-i18n="viewDiploma">Voir diplôme</a>
+              </div>
+            </div>
+          </section>
+
+          <!-- Certifications (SOUS formation) -->
+          <section id="certifications" class="cardx p-4 mt-4">
+            <h2 class="section-title" data-i18n="certsTitle">Certifications</h2>
+
+            <div class="cert-mini">
+              <div class="cert-mini-title" data-i18n="certRgpdTitle">Protection des données (RGPD)</div>
+              <div class="cert-mini-meta" data-i18n="certRgpdMeta">SUEZ • 45 minutes • Mars 2025</div>
+              <a class="btn btn-sm btn-outline-primary mt-2"
+                 href="https://drive.google.com/file/d/1s4oy6b3W4dQNV5B8FrKCbbYli84uVRM_/view"
+                 target="_blank" rel="noopener" data-i18n="viewCert">Voir la certification</a>
+            </div>
+
+            <hr class="divider my-3">
+
+            <div class="cert-mini">
+              <div class="cert-mini-title" data-i18n="certCyberTitle">Cybersecurity Awareness</div>
+              <div class="cert-mini-meta" data-i18n="certCyberMeta">SUEZ • 30 minutes • Octobre 2024</div>
+              <a class="btn btn-sm btn-outline-primary mt-2"
+                 href="https://drive.google.com/file/d/1Xmf2fxNwxIGZlbwR7EM5vJcFFzx4-AVv/view"
+                 target="_blank" rel="noopener" data-i18n="viewCert">Voir la certification</a>
+            </div>
+          </section>
+
+          <!-- Langues (APRÈS formation/certifs) -->
           <section class="cardx p-4 mt-4">
             <h2 class="section-title" data-i18n="languages">Langues</h2>
             <ul class="mb-0">
@@ -384,118 +452,11 @@
             </div>
           </section>
 
-          <!-- Education -->
-          <section id="education" class="cardx p-4 mt-4">
-            <h2 class="section-title" data-i18n="education">Formation</h2>
-
-            <div class="edu-item">
-              <div class="edu-logo"><img src="img/eslsca_mba.jpg" alt="ESLSCA"></div>
-              <div class="edu-body">
-                <div class="edu-top">
-                  <h5 class="mb-1">ESLSCA Business School</h5>
-                  <span class="edu-meta">Paris, France • <span data-i18n="eduEslscaDates">oct 2025 – actuellement</span></span>
-                </div>
-                <div class="edu-program" data-i18n="eduEslscaProgram">MBA Data Finance Performance</div>
-                <div class="edu-courses" data-i18n="eduEslscaCourses">
-                  Matières clés : Data Visualisation, Modélisation financière, Machine Learning, Data Analytics, Data Management et Gouvernance de la donnée.
-                </div>
-              </div>
-              <div class="edu-actions">
-                <span class="badge badge-soft" data-i18n="inProgress">En cours</span>
-              </div>
-            </div>
-
-            <hr class="divider my-3">
-
-            <div class="edu-item">
-              <div class="edu-logo"><img src="img/ia_school_master.jpg" alt="IA School"></div>
-              <div class="edu-body">
-                <div class="edu-top">
-                  <h5 class="mb-1">IA School (Nexa Digital School)</h5>
-                  <span class="edu-meta">Paris, France • <span data-i18n="eduIasDates">sept 2023 – sept 2025</span></span>
-                </div>
-                <div class="edu-program" data-i18n="eduIasProgram">Mastère Management de Projet & Data</div>
-                <div class="edu-courses" data-i18n="eduIasCourses">
-                  Matières clés : Python, Machine Learning, SQL, Analyse de données, Probabilités, Modélisation et analyse de données, Data Pipelines.
-                </div>
-              </div>
-              <div class="edu-actions">
-                <a class="btn btn-sm btn-outline-primary"
-                   href="https://drive.google.com/file/d/1OQnAzpGqfuzEVnek0SbpFgQWAxSbvzMM/view"
-                   target="_blank" rel="noopener" data-i18n="viewDiploma">
-                  Voir diplôme
-                </a>
-              </div>
-            </div>
-
-            <hr class="divider my-3">
-
-            <div class="edu-item">
-              <div class="edu-logo"><img src="img/iua_licence.jpg" alt="IUA"></div>
-              <div class="edu-body">
-                <div class="edu-top">
-                  <h5 class="mb-1">Institut Universitaire d'Abidjan</h5>
-                  <span class="edu-meta">Abidjan, Côte d’Ivoire • <span data-i18n="eduIuaDates">déc 2019 – sept 2022</span></span>
-                </div>
-                <div class="edu-program" data-i18n="eduIuaProgram">Licence en Mathématiques Appliquées — option Actuariat</div>
-                <div class="edu-courses" data-i18n="eduIuaCourses">
-                  Matières clés : Statistiques, Probabilités, Modélisation mathématiques, Programmation orientée objet.
-                </div>
-              </div>
-              <div class="edu-actions">
-                <a class="btn btn-sm btn-outline-primary"
-                   href="https://drive.google.com/file/d/1xvfXWHWnsRce-0T0TXfFwUCTAU7v7uvE/view"
-                   target="_blank" rel="noopener" data-i18n="viewDiploma">
-                  Voir diplôme
-                </a>
-              </div>
-            </div>
-
-          </section>
-
-          <!-- Certifications -->
-          <section id="certifications" class="cardx p-4 mt-4">
-            <h2 class="section-title" data-i18n="certsTitle">Certifications</h2>
-
-            <div class="cert-simple-list">
-              <div class="cert-simple-item">
-                <div class="cert-simple-body">
-                  <h5 class="mb-1" data-i18n="certRgpdTitle">Protection des données (RGPD)</h5>
-                  <div class="cert-simple-meta" data-i18n="certRgpdMeta">SUEZ • 45 minutes • Mars 2025</div>
-                  <p class="cert-simple-text" data-i18n="certRgpdDesc">Intégrer le respect du RGPD dans une gestion professionnelle des données.</p>
-                </div>
-                <div class="cert-simple-actions">
-                  <a class="btn btn-sm btn-outline-primary"
-                     href="https://drive.google.com/file/d/1s4oy6b3W4dQNV5B8FrKCbbYli84uVRM_/view"
-                     target="_blank" rel="noopener">
-                    <span data-i18n="viewCert">Voir la certification</span>
-                  </a>
-                </div>
-              </div>
-
-              <div class="cert-simple-item">
-                <div class="cert-simple-body">
-                  <h5 class="mb-1" data-i18n="certCyberTitle">Cybersecurity Awareness</h5>
-                  <div class="cert-simple-meta" data-i18n="certCyberMeta">SUEZ • 30 minutes • Octobre 2024</div>
-                  <p class="cert-simple-text" data-i18n="certCyberDesc">Sensibilisation aux risques cyber et aux bonnes pratiques de sécurité de l’information.</p>
-                </div>
-                <div class="cert-simple-actions">
-                  <a class="btn btn-sm btn-outline-primary"
-                     href="https://drive.google.com/file/d/1Xmf2fxNwxIGZlbwR7EM5vJcFFzx4-AVv/view"
-                     target="_blank" rel="noopener">
-                    <span data-i18n="viewCert">Voir la certification</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </section>
-
           <p class="text-center text-muted small mt-4 mb-0" data-i18n="quote">
             « La donnée n’a de valeur que lorsqu’elle éclaire une décision. »
           </p>
 
         </section>
-
       </div>
     </div>
   </main>
