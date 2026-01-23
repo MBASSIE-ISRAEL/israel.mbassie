@@ -9,62 +9,141 @@
 
   const dict = {
     fr: {
-      title: "Data Analyst / Data Scientist Junior",
+      title: "Data Scientist | Data Analyst | Power Platform | Procurement",
       darkMode: "Sombre",
-      contactMe: "Me contacter",
+      downloadCV: "Télécharger mon CV",
+      navAbout: "À propos",
+      navProjects: "Projets",
+      navExperience: "Expériences",
+      navEducation: "Formation",
+      navCerts: "Certifications",
       info: "Infos",
       skills: "Compétences",
       bi: "Data Analysis / BI",
+      powerPlatform: "Power Platform",
       langs: "Langages",
+      languages: "Langues",
+      lang1: "Français — Langue maternelle",
+      lang2: "Anglais — Niveau B2",
       about: "À propos",
-      aboutText: "Passionné par l’intelligence artificielle et la science des données, je conçois des solutions orientées décision (dashboards, analyses) et des solutions prédictives (machine learning), déployables dans des contextes réels.",
+      aboutText: "Data Scientist et Data Analyst orienté métier, je conçois des solutions décisionnelles (dashboards, reporting, automatisation) et des modèles prédictifs (machine learning), en veillant à la qualité des données et à la mise en production.",
       latestProjects: "Projets",
       selected: "Sélection",
-      daProjects: "Projets Data Analyst",
-      dsProjects: "Projets Data Science",
-      p1title: "Analyse de la végétalisation à Paris",
-      p1sub: "Exploration et visualisation de données environnementales (open data).",
-      p1text: "Nettoyage, analyse et visualisations pour produire des insights actionnables.",
-      p2sub: "Web scraping, nettoyage et analyse descriptive.",
-      p2text: "Extraction automatisée et production d’indicateurs/visualisations.",
-      p3title: "Détection d’engins",
-      p3sub: "Computer Vision pour la détection/classification de véhicules.",
-      p3text: "Dataset, entraînement deep learning, évaluation et démo.",
-      p4sub: "Assistant LLM orienté accessibilité.",
-      p4text: "Pipeline NLP, intégration modèle de langage et interface.",
-      p5title: "Risque Crédit (Modélisation prédictive)",
-      p5sub: "Scoring ML + interface Streamlit.",
-      p5text: "Feature engineering, modèle supervisé, évaluation et déploiement.",
-      quote: "« La donnée n’a de valeur que lorsqu’elle éclaire une décision. »"
+      daProjects: "Data Analyst",
+      dsProjects: "Data Science",
+      viewGitHub: "Voir sur GitHub",
+      viewPDF: "Voir le PDF",
+      experience: "Expériences professionnelles",
+      viewProof: "Voir attestation",
+      education: "Formation",
+      viewDiploma: "Voir diplôme",
+      inProgress: "En cours",
+      certsTitle: "Certifications",
+      viewCert: "Voir la certification",
+      certRgpdTitle: "Protection des données (RGPD)",
+      certRgpdMeta: "SUEZ • 45 minutes • Mars 2025",
+      certRgpdDesc: "Intégrer le respect du RGPD dans une gestion professionnelle des données.",
+      certCyberTitle: "Cybersecurity Awareness",
+      certCyberMeta: "SUEZ • 30 minutes • Octobre 2024",
+      certCyberDesc: "Sensibilisation aux risques cyber et aux bonnes pratiques de sécurité de l’information.",
+      quote: "« La donnée n’a de valeur que lorsqu’elle éclaire une décision. »",
+
+      expSuezDates: "sept 2024 – sept 2025",
+      expSuezRole: "Chargé de Projet Data & Achats (Alternance)",
+      expSuezDept: "Direction Procurement Excellence, Service Process & Outils",
+      expSuez1: "Pilotage et amélioration de la data achats : consolidation multi-outils (P2P/ERP – S2P/Ivalua), réconciliation des référentiels fournisseurs et fiabilisation des données.",
+      expSuez2: "Développement et optimisation de reportings Power BI pour le pilotage achats (montants commandés pluriannuels, segmentation fournisseurs, KPI de performance).",
+      expSuez3: "Maintenance évolutive d’outils d’aide à la décision : résolution d’anomalies fonctionnelles, optimisation des performances et enrichissement fonctionnel.",
+      expSuez4: "Extraction, transformation et automatisation de flux de données via SQL, Python et Excel.",
+      expSuez5: "Conception de guides utilisateurs, documentation technico-fonctionnelle et amélioration de l’UX des outils internes.",
+
+      expNpspDates: "nov 2022 – août 2023",
+      expNpspRole: "Data Analyst Achats (Stage)",
+      expNpspDept: "Centrale d’achats pharmaceutiques — Direction Logistique Pharmaceutique",
+      expNpsp1: "Analyses statistiques pour la stratégie d’achat (consommations, prévisions, prix fournisseurs).",
+      expNpsp2: "Structuration et gestion de bases de données achats sous Excel et Access.",
+      expNpsp3: "Développement et automatisation de reportings décisionnels.",
+      expNpsp4: "Production de rapports et présentations pour la Direction Achats & Approvisionnements.",
+      expNpsp5: "Soutien opérationnel : traitement de factures proforma, suivi de commandes, numérisation et archivage documentaire.",
+
+      eduEslscaDates: "oct 2025 – actuellement",
+      eduEslscaProgram: "MBA Data Finance Performance",
+      eduEslscaCourses: "Matières clés : Data Visualisation, Modélisation financière, Machine Learning, Data Analytics, Data Management et Gouvernance de la donnée.",
+      eduIasDates: "sept 2023 – sept 2025",
+      eduIasProgram: "Mastère Management de Projet & Data",
+      eduIasCourses: "Matières clés : Python, Machine Learning, SQL, Analyse de données, Probabilités, Modélisation et analyse de données, Data Pipelines.",
+      eduIuaDates: "déc 2019 – sept 2022",
+      eduIuaProgram: "Licence en Mathématiques Appliquées — option Actuariat",
+      eduIuaCourses: "Matières clés : Statistiques, Probabilités, Modélisation mathématiques, Programmation orientée objet."
     },
+
     en: {
-      title: "Junior Data Analyst / Data Scientist",
+      title: "Data Scientist | Data Analyst | Power Platform | Procurement",
       darkMode: "Dark",
-      contactMe: "Contact Me",
+      downloadCV: "Download my CV",
+      navAbout: "About",
+      navProjects: "Projects",
+      navExperience: "Experience",
+      navEducation: "Education",
+      navCerts: "Certifications",
       info: "Info",
       skills: "Skills",
       bi: "Data Analysis / BI",
+      powerPlatform: "Power Platform",
       langs: "Languages",
+      languages: "Languages",
+      lang1: "French — Native",
+      lang2: "English — B2",
       about: "About",
-      aboutText: "I’m passionate about AI and data science. I build decision-oriented solutions (dashboards, analytics) and predictive solutions (machine learning) that can be deployed in real-world contexts.",
+      aboutText: "Business-oriented Data Scientist and Data Analyst. I build decision-making solutions (dashboards, reporting, automation) and predictive models (machine learning), with a strong focus on data quality and deployment.",
       latestProjects: "Projects",
       selected: "Selected",
-      daProjects: "Data Analyst Projects",
-      dsProjects: "Data Science Projects",
-      p1title: "Paris Greening Analysis",
-      p1sub: "Exploratory analysis and visualization of environmental open data.",
-      p1text: "Cleaning, analysis and visualizations to produce actionable insights.",
-      p2sub: "Web scraping, cleaning and descriptive analytics.",
-      p2text: "Automated extraction and KPI/visual production.",
-      p3title: "Vehicle Detection",
-      p3sub: "Computer Vision for vehicle detection/classification.",
-      p3text: "Dataset, deep learning training, evaluation and demo.",
-      p4sub: "Accessibility-oriented LLM assistant.",
-      p4text: "NLP pipeline, LLM integration and demo interface.",
-      p5title: "Credit Risk (Predictive Modeling)",
-      p5sub: "ML scoring + Streamlit interface.",
-      p5text: "Feature engineering, supervised model, evaluation and deployment.",
-      quote: "“Data only matters when it informs decisions.”"
+      daProjects: "Data Analyst",
+      dsProjects: "Data Science",
+      viewGitHub: "View on GitHub",
+      viewPDF: "View PDF",
+      experience: "Work Experience",
+      viewProof: "View proof",
+      education: "Education",
+      viewDiploma: "View diploma",
+      inProgress: "In progress",
+      certsTitle: "Certifications",
+      viewCert: "View certification",
+      certRgpdTitle: "Data Protection (GDPR)",
+      certRgpdMeta: "SUEZ • 45 minutes • March 2025",
+      certRgpdDesc: "Integrating GDPR compliance into professional data management practices.",
+      certCyberTitle: "Cybersecurity Awareness",
+      certCyberMeta: "SUEZ • 30 minutes • October 2024",
+      certCyberDesc: "Awareness of cyber risks and best practices in information security.",
+      quote: "“Data only matters when it informs decisions.”",
+
+      expSuezDates: "Sep 2024 – Sep 2025",
+      expSuezRole: "Data & Procurement Project Officer (Apprenticeship)",
+      expSuezDept: "Procurement Excellence, Process & Tools Department",
+      expSuez1: "Procurement data improvement: multi-tool consolidation (P2P/ERP – S2P/Ivalua), supplier master data reconciliation and data quality assurance.",
+      expSuez2: "Power BI dashboards for procurement steering (multi-year spend, supplier segmentation, performance KPIs).",
+      expSuez3: "Decision-support tool maintenance: issue resolution, performance optimization and feature enhancements.",
+      expSuez4: "Data extraction, transformation and automation using SQL, Python and Excel.",
+      expSuez5: "User guides, techno-functional documentation and UX improvements for internal tools.",
+
+      expNpspDates: "Nov 2022 – Aug 2023",
+      expNpspRole: "Procurement Data Analyst (Internship)",
+      expNpspDept: "Pharmaceutical Central Purchasing — Logistics Department",
+      expNpsp1: "Statistical analyses for procurement strategy (consumption, forecasting, supplier pricing).",
+      expNpsp2: "Procurement database structuring and management using Excel and Access.",
+      expNpsp3: "Decision reporting design and automation.",
+      expNpsp4: "Reports and presentations for Procurement & Supply teams.",
+      expNpsp5: "Operational support: proforma invoice processing, order tracking, document digitization and archiving.",
+
+      eduEslscaDates: "Oct 2025 – Present",
+      eduEslscaProgram: "MBA Data Finance Performance",
+      eduEslscaCourses: "Key modules: Data Visualization, Financial Modeling, Machine Learning, Data Analytics, Data Management and Data Governance.",
+      eduIasDates: "Sep 2023 – Sep 2025",
+      eduIasProgram: "Master’s in Project Management & Data",
+      eduIasCourses: "Key modules: Python, Machine Learning, SQL, Data Analysis, Probability, Modeling & Data Analytics, Data Pipelines.",
+      eduIuaDates: "Dec 2019 – Sep 2022",
+      eduIuaProgram: "BSc in Applied Mathematics — Actuarial track",
+      eduIuaCourses: "Key modules: Statistics, Probability, Mathematical Modeling, Object-Oriented Programming."
     }
   };
 
@@ -95,19 +174,25 @@
     setThemeBtn(theme);
   }
 
-  // init lang
   const savedLang = localStorage.getItem(LANG_KEY) || "fr";
   applyI18n(savedLang);
 
-  // init theme
   const savedTheme = localStorage.getItem(THEME_KEY);
   const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
   const initialTheme = savedTheme || (prefersDark ? "dark" : "light");
   applyTheme(initialTheme);
 
-  // events
-  langFR?.addEventListener("click", () => { localStorage.setItem(LANG_KEY, "fr"); applyI18n("fr"); setThemeBtn(root.dataset.theme); });
-  langEN?.addEventListener("click", () => { localStorage.setItem(LANG_KEY, "en"); applyI18n("en"); setThemeBtn(root.dataset.theme); });
+  langFR?.addEventListener("click", () => {
+    localStorage.setItem(LANG_KEY, "fr");
+    applyI18n("fr");
+    setThemeBtn(root.dataset.theme);
+  });
+
+  langEN?.addEventListener("click", () => {
+    localStorage.setItem(LANG_KEY, "en");
+    applyI18n("en");
+    setThemeBtn(root.dataset.theme);
+  });
 
   themeBtn?.addEventListener("click", () => {
     const next = root.dataset.theme === "dark" ? "light" : "dark";
