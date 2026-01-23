@@ -169,7 +169,7 @@ Je combine une double compétence :
 
 ## Expériences professionnelles
 
-### Chargé de projet Data – Suez R&V France (09/2024 – Présent)
+### Chargé de projet Data – Suez R&V France (09/2024 – 09/2025)
 - Développement de tableaux de bord stratégiques.
 - Automatisation via Power Automate et Python.
 - Projets liés à la durabilité environnementale.
