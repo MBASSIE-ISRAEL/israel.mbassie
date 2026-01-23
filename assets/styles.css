@@ -101,23 +101,33 @@ a:hover{ opacity:.9; }
   border-color: var(--primary);
 }
 
+/* Sidebar sticky */
+@media (min-width: 992px){
+  .sidebar{ position:sticky; top:24px; }
+}
+
+/* Projects — images redimensionnées */
 .project{
   display:grid;
-  grid-template-columns:180px 1fr;
+  grid-template-columns: 160px 1fr; /* plus compact */
   gap:16px;
   padding:14px 0;
+  align-items:start;
 }
 
 .project-thumb{
+  width:160px;
+  height:110px;               /* vignette fixe */
   border-radius:12px;
   overflow:hidden;
   border:1px solid var(--border);
+  background: rgba(255,255,255,0.02);
 }
 
 .project-thumb img{
   width:100%;
-  height:120px;
-  object-fit:cover;
+  height:100%;
+  object-fit:cover;           /* recadre sans déformer */
   display:block;
 }
 
@@ -131,22 +141,9 @@ a:hover{ opacity:.9; }
   color:var(--text);
 }
 
-.tag{
-  display:inline-block;
-  padding:4px 10px;
-  border-radius:999px;
-  border:1px solid var(--border);
-  color:var(--muted);
-  font-size:.85rem;
-}
-
-@media (min-width: 992px){
-  .sidebar{ position:sticky; top:24px; }
-}
-
 @media (max-width: 768px){
-  .project{ grid-template-columns:1fr; }
-  .project-thumb img{ height:160px; }
+  .project{ grid-template-columns: 1fr; }
+  .project-thumb{ width:100%; height:180px; }
 }
 
 /* Experience */
@@ -189,60 +186,40 @@ a:hover{ opacity:.9; }
   .exp-actions{ grid-column:1 / -1; justify-content:flex-start; margin-top:10px; }
 }
 
-/* Education */
-.edu-item{
-  display:grid;
-  grid-template-columns: 74px 1fr auto;
-  gap:14px;
-  align-items:center;
+/* Sidebar Education mini */
+.edu-mini{
+  display:flex;
+  gap:12px;
+  align-items:flex-start;
 }
-.edu-logo{
-  width:74px; height:74px;
-  border-radius:14px;
+.edu-mini-logo{
+  width:52px;
+  height:52px;
+  border-radius:12px;
   border:1px solid var(--border);
-  overflow:hidden;
-  background: rgba(255,255,255,0.02);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-}
-.edu-logo img{
-  width:100%;
-  height:100%;
   object-fit:cover;
-  display:block;
 }
-.edu-top{
-  display:flex;
-  align-items:baseline;
-  justify-content:space-between;
-  gap:10px;
-  flex-wrap:wrap;
+.edu-mini-title{
+  font-weight:700;
+  line-height:1.2;
 }
-.edu-meta{ color: var(--muted); font-size: .9rem; }
-.edu-program{ font-weight:700; margin-top:2px; }
-.edu-courses{ color: var(--muted); font-size: .95rem; margin-top:6px; line-height:1.35; }
-.edu-actions{ display:flex; align-items:center; justify-content:flex-end; gap:10px; }
-@media (max-width: 768px){
-  .edu-item{ grid-template-columns: 74px 1fr; }
-  .edu-actions{ grid-column: 1 / -1; justify-content:flex-start; margin-top:10px; }
+.edu-mini-meta{
+  color:var(--muted);
+  font-size:.9rem;
+  margin-top:2px;
+}
+.edu-mini-program{
+  margin-top:6px;
+  font-size:.95rem;
 }
 
-/* Certifications */
-.cert-simple-list{ display:grid; gap:16px; }
-.cert-simple-item{
-  display:grid;
-  grid-template-columns: 1fr auto;
-  gap: 16px;
-  padding: 14px;
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  background: rgba(255,255,255,0.02);
+/* Sidebar Certifications mini */
+.cert-mini-title{
+  font-weight:700;
+  line-height:1.2;
 }
-.cert-simple-meta{ color: var(--muted); font-size: 0.9rem; }
-.cert-simple-text{ margin: 6px 0 0; color: var(--text); font-size: 0.95rem; line-height: 1.35; }
-.cert-simple-actions{ display:flex; align-items:center; }
-@media (max-width: 768px){
-  .cert-simple-item{ grid-template-columns: 1fr; }
-  .cert-simple-actions{ justify-content:flex-start; }
+.cert-mini-meta{
+  color:var(--muted);
+  font-size:.9rem;
+  margin-top:4px;
 }
