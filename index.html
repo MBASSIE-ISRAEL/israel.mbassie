@@ -3,198 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Israel Dedieu M’BASSIE | Portfolio</title>
+  <title>Israel Dedieu M'BASSIE | Portfolio</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-
-  <style>
-    :root{
-      --bg:#e9eff3; --surface:#fff; --text:#111827; --muted:#6b7280;
-      --border:#e5e7eb; --shadow:0 10px 24px rgba(17,24,39,.08);
-      --primary:#1f3c88; --soft:rgba(31,60,136,.12);
-    }
-
-    html[data-theme="dark"]{
-      --bg:#0b1220; --surface:#0f172a; --text:#e5e7eb; --muted:#9ca3af;
-      --border:rgba(229,231,235,.12); --shadow:0 10px 24px rgba(0,0,0,.35);
-      --primary:#6ea8ff; --soft:rgba(110,168,255,.16);
-    }
-
-    body{ background:var(--bg); color:var(--text); }
-    a{ color:var(--primary); }
-    a:hover{ opacity:.9; }
-
-    .topbar{ background:var(--surface); border-bottom:1px solid var(--border); }
-    .subnav{ background:var(--surface); border-bottom:1px solid var(--border); }
-    .subnav-link{
-      text-decoration:none; color:var(--muted);
-      border:1px solid var(--border); background:var(--surface);
-      padding:6px 10px; border-radius:999px; font-size:.9rem;
-    }
-    .subnav-link:hover{ color:var(--primary); border-color:var(--primary); }
-
-    /* Avatar slightly larger */
-    .avatar{
-      width:92px; height:92px; border-radius:50%;
-      object-fit:cover; border:3px solid var(--primary);
-    }
-
-    .subtitle{ color:var(--muted); }
-
-    .icon-link{
-      width:36px; height:36px;
-      display:inline-flex; align-items:center; justify-content:center;
-      border-radius:999px;
-      border:1px solid var(--border);
-      background:var(--surface);
-      color:var(--primary);
-      text-decoration:none;
-    }
-
-    .cardx{
-      background:var(--surface);
-      border:1px solid var(--border);
-      border-radius:14px;
-      box-shadow:var(--shadow);
-    }
-
-    .section-title{
-      color:var(--primary);
-      font-weight:700;
-      font-size:1.15rem;
-      margin-bottom:.75rem;
-    }
-
-    .subsection-title{ font-weight:700; font-size:1rem; margin-top:1rem; }
-
-    .badge-soft{
-      background:var(--soft);
-      color:var(--primary);
-      border-radius:999px;
-      padding:.35rem .6rem;
-    }
-
-    .divider{ border-top:1px solid var(--border); opacity:1; }
-
-    .tag{
-      display:inline-block;
-      padding:4px 10px;
-      font-size:.75rem;
-      border-radius:999px;
-      background:var(--soft);
-      color:var(--primary);
-    }
-
-    .link-soft{ color:var(--primary); text-decoration:none; }
-    .link-soft:hover{ text-decoration:underline; }
-
-    /* Projects */
-    .project{
-      display:grid;
-      grid-template-columns:180px 1fr;
-      gap:16px;
-      padding:14px 0;
-    }
-    .project-thumb{
-      border-radius:12px;
-      overflow:hidden;
-      border:1px solid var(--border);
-      background:rgba(255,255,255,.02);
-    }
-    .project-thumb img{
-      width:100%;
-      height:120px;
-      object-fit:cover;
-      display:block;
-    }
-    .project-title a{ text-decoration:none; font-weight:700; }
-    .project-subtitle{ color:var(--muted); margin:6px 0 8px; }
-    .project-text{ margin:0 0 10px; }
-
-    /* Skills badges */
-    .badge-wrap img{ margin:4px 6px 0 0; }
-
-    /* Education */
-    .edu-item{
-      display:grid;
-      grid-template-columns:74px 1fr auto;
-      gap:14px;
-      align-items:center;
-    }
-    .edu-logo{
-      width:74px; height:74px;
-      border-radius:14px;
-      border:1px solid var(--border);
-      overflow:hidden;
-      background: rgba(255,255,255,0.02);
-      display:flex;
-      align-items:center;
-      justify-content:center;
-    }
-    .edu-logo img{ width:100%; height:100%; object-fit:cover; display:block; }
-    .edu-top{ display:flex; align-items:baseline; justify-content:space-between; gap:10px; flex-wrap:wrap; }
-    .edu-meta{ color:var(--muted); font-size:.9rem; }
-    .edu-program{ font-weight:700; margin-top:2px; }
-    .edu-courses{ color:var(--muted); font-size:.95rem; margin-top:6px; line-height:1.35; }
-    .edu-actions{ display:flex; align-items:center; justify-content:flex-end; gap:10px; }
-
-    /* Experience */
-    .exp-item{
-      display:grid;
-      grid-template-columns:74px 1fr auto;
-      gap:16px;
-      align-items:flex-start;
-    }
-    .exp-logo{
-      width:74px; height:74px;
-      border-radius:14px;
-      border:1px solid var(--border);
-      overflow:hidden;
-      background: rgba(255,255,255,0.02);
-      display:flex;
-      align-items:center;
-      justify-content:center;
-    }
-    .exp-logo img{ width:100%; height:100%; object-fit:contain; }
-    .exp-top{ display:flex; align-items:baseline; justify-content:space-between; gap:10px; flex-wrap:wrap; }
-    .exp-meta{ color:var(--muted); font-size:.9rem; }
-    .exp-role{ font-weight:700; margin-top:2px; }
-    .exp-desc{ color:var(--muted); font-size:.95rem; margin:4px 0 8px; }
-    .exp-tasks{ margin:0; padding-left:18px; }
-    .exp-tasks li{ margin-bottom:6px; }
-    .exp-actions{ display:flex; align-items:center; }
-
-    /* Certifications (simple) */
-    .cert-simple-list{ display:grid; gap:16px; }
-    .cert-simple-item{
-      display:grid;
-      grid-template-columns:1fr auto;
-      gap:16px;
-      padding:14px;
-      border:1px solid var(--border);
-      border-radius:12px;
-      background: rgba(255,255,255,0.02);
-    }
-    .cert-simple-meta{ color:var(--muted); font-size:.9rem; }
-    .cert-simple-text{ margin:6px 0 0; color:var(--text); font-size:.95rem; line-height:1.35; }
-    .cert-simple-actions{ display:flex; align-items:center; }
-
-    @media (min-width: 992px){ .sidebar{ position:sticky; top:24px; } }
-    @media (max-width: 768px){
-      .project{ grid-template-columns:1fr; }
-      .project-thumb img{ height:160px; }
-
-      .edu-item{ grid-template-columns:74px 1fr; }
-      .edu-actions{ grid-column:1/-1; justify-content:flex-start; margin-top:10px; }
-
-      .exp-item{ grid-template-columns:74px 1fr; }
-      .exp-actions{ grid-column:1/-1; justify-content:flex-start; margin-top:10px; }
-
-      .cert-simple-item{ grid-template-columns:1fr; }
-      .cert-simple-actions{ justify-content:flex-start; }
-    }
-  </style>
+  <link rel="stylesheet" href="assets/styles.css" />
 </head>
 
 <body>
@@ -204,18 +17,22 @@
       <div class="d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between gap-3">
 
         <div class="d-flex align-items-center gap-3">
-          <img src="img/ppidm.jpg" class="avatar" alt="Israel Dedieu M’BASSIE">
+          <img src="img/ppidm.jpg" class="avatar avatar-lg" alt="Israel Dedieu M'BASSIE">
           <div>
-            <h1 class="mb-1">Israel Dedieu M’BASSIE</h1>
-
+            <h1 class="mb-1">Israel Dedieu M'BASSIE</h1>
             <p class="mb-2 subtitle">
               <span data-i18n="title">Data Scientist | Data Analyst | Power Platform | Procurement</span> • Paris, France
             </p>
-
             <div class="d-flex flex-wrap gap-2">
-              <a class="icon-link" href="https://github.com/MBASSIE-ISRAEL" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
-              <a class="icon-link" href="https://www.linkedin.com/in/israel-dedieu/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
-              <a class="icon-link" href="mailto:israelmbassie02@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+              <a class="icon-link" href="https://github.com/MBASSIE-ISRAEL" target="_blank" rel="noopener" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a class="icon-link" href="https://www.linkedin.com/in/israel-dedieu/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a class="icon-link" href="mailto:israelmbassie02@gmail.com" aria-label="Email">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -231,7 +48,7 @@
           </button>
 
           <a class="btn btn-sm btn-success"
-             href="CV_DRIVE_LINK"
+             href="TON_LIEN_CV_DRIVE"
              target="_blank" rel="noopener">
             <i class="fa-solid fa-download me-2"></i><span data-i18n="downloadCV">Télécharger mon CV</span>
           </a>
@@ -241,7 +58,7 @@
     </div>
   </header>
 
-  <!-- Navigation -->
+  <!-- Subnav -->
   <nav class="subnav py-2">
     <div class="container">
       <div class="d-flex flex-wrap gap-2 align-items-center">
@@ -283,7 +100,6 @@
                 <img src="https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=000" />
                 <img src="https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=fff" />
                 <img src="https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoftexcel&logoColor=fff" />
-                <img src="https://img.shields.io/badge/VBA-867DB1?style=for-the-badge&logo=microsoft&logoColor=fff" />
               </div>
             </div>
 
@@ -292,7 +108,6 @@
               <div class="badge-wrap">
                 <img src="https://img.shields.io/badge/Power%20Apps-742774?style=for-the-badge&logo=powerapps&logoColor=fff" />
                 <img src="https://img.shields.io/badge/Power%20Automate-0066FF?style=for-the-badge&logo=powerautomate&logoColor=fff" />
-                <img src="https://img.shields.io/badge/SharePoint-0078D4?style=for-the-badge&logo=microsoftsharepoint&logoColor=fff" />
               </div>
             </div>
 
@@ -311,7 +126,6 @@
                 <img src="https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=fff" />
                 <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=fff" />
                 <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=fff" />
-                <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=fff" />
               </div>
             </div>
 
@@ -319,10 +133,11 @@
               <div class="small text-muted mb-2">MLOps / Cloud</div>
               <div class="badge-wrap">
                 <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=fff" />
+                <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=fff" />
                 <img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=000" />
-                <img src="https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=fff" />
               </div>
             </div>
+
           </section>
 
           <section class="cardx p-4 mt-4">
@@ -332,16 +147,18 @@
               <li data-i18n="lang2">Anglais — Niveau B2</li>
             </ul>
           </section>
+
         </aside>
 
         <!-- Main content RIGHT -->
         <section class="col-lg-8 order-lg-2">
 
+          <!-- About -->
           <section id="about" class="cardx p-4">
             <h2 class="section-title" data-i18n="about">À propos</h2>
             <p class="mb-0" data-i18n="aboutText">
-              Je conçois des solutions data orientées décision (dashboards, automatisations) et des solutions prédictives (machine learning),
-              avec un focus sur la qualité de données, la gouvernance et les usages métiers (achats/procurement).
+              Data Scientist et Data Analyst orienté métier, je conçois des solutions décisionnelles (dashboards, reporting, automatisation)
+              et des modèles prédictifs (machine learning), en veillant à la qualité des données et à la mise en production.
             </p>
           </section>
 
@@ -352,7 +169,61 @@
               <span class="badge badge-soft" data-i18n="selected">Sélection</span>
             </div>
 
-            <h3 class="subsection-title mt-4" data-i18n="daProjects">Projets Data Analyst</h3>
+            <h3 class="subsection-title mt-4" data-i18n="daProjects">Data Analyst</h3>
+
+            <!-- Végétalisation -->
+            <article class="project">
+              <div class="project-thumb">
+                <img src="img/du_vert_chez_moi.jpg" alt="Analyse de la végétalisation à Paris">
+              </div>
+              <div>
+                <h4 class="project-title">
+                  <a href="https://github.com/MBASSIE-ISRAEL/Analyse_de_donnees-du_vert_chez_moi" target="_blank" rel="noopener">
+                    Analyse de la végétalisation à Paris
+                  </a>
+                </h4>
+
+                <p class="proj-line"><strong>Objectif :</strong> Étudier la répartition spatiale de la végétation à Paris à partir de données ouvertes afin d’identifier des disparités territoriales.</p>
+                <p class="proj-line"><strong>Méthodologie :</strong> Collecte open data, nettoyage/structuration, analyses statistiques descriptives et visualisations.</p>
+                <p class="proj-line"><strong>Résultats :</strong> Identification des zones les plus/moins végétalisées et mise en évidence d’écarts entre arrondissements.</p>
+                <p class="proj-line"><strong>Technologies :</strong> Python (Pandas, Matplotlib, Seaborn)</p>
+
+                <a class="btn btn-sm btn-outline-primary"
+                   href="https://github.com/MBASSIE-ISRAEL/Analyse_de_donnees-du_vert_chez_moi"
+                   target="_blank" rel="noopener" data-i18n="viewGitHub">
+                  Voir sur GitHub
+                </a>
+              </div>
+            </article>
+
+            <!-- Scraping Books -->
+            <article class="project">
+              <div class="project-thumb">
+                <img src="img/scrapping_books.jpg" alt="Scraping Books">
+              </div>
+              <div>
+                <h4 class="project-title">
+                  <a href="https://github.com/MBASSIE-ISRAEL/Scrapping_books" target="_blank" rel="noopener">
+                    Scraping Books – Analyse de données issues du web
+                  </a>
+                </h4>
+
+                <p class="proj-line"><strong>Objectif :</strong> Extraire automatiquement des données de livres afin d’analyser catégories, prix et notations.</p>
+                <p class="proj-line"><strong>Méthodologie :</strong> Web scraping, nettoyage/transformation, analyses et visualisations.</p>
+                <p class="proj-line"><strong>Résultats :</strong> Dataset exploitable + comparaisons par catégories, distributions de prix et notes.</p>
+                <p class="proj-line"><strong>Technologies :</strong> Python (BeautifulSoup, Pandas, Matplotlib)</p>
+
+                <a class="btn btn-sm btn-outline-primary"
+                   href="https://github.com/MBASSIE-ISRAEL/Scrapping_books"
+                   target="_blank" rel="noopener" data-i18n="viewGitHub">
+                  Voir sur GitHub
+                </a>
+              </div>
+            </article>
+
+            <hr class="divider my-4">
+
+            <h3 class="subsection-title" data-i18n="dsProjects">Data Science</h3>
 
             <!-- Uber Dashboard -->
             <article class="project">
@@ -360,79 +231,96 @@
                 <img src="img/Uber_dashboard.jpg" alt="Uber Dashboard Power BI">
               </div>
               <div>
-                <h4 class="project-title">Uber Dashboard (Power BI)</h4>
-                <p class="project-subtitle" data-i18n="uberSub">
-                  Dashboard Power BI pour piloter l’activité (réservations, revenus, annulations, distance, notes).
-                </p>
-                <p class="project-text" data-i18n="uberText">
-                  Tableau de bord multi-pages avec filtres temporels et KPIs clés (réservations totales, réservations terminées, revenu total),
-                  permettant un pilotage opérationnel et une lecture rapide des tendances.
-                </p>
-                <div class="d-flex flex-wrap gap-2 align-items-center">
-                  <span class="tag">Power BI</span><span class="tag">Data Viz</span><span class="tag">KPI</span>
-                  <a class="btn btn-sm btn-outline-primary ms-auto"
-                     href="https://drive.google.com/file/d/1aMobTEHTtnjC5mhkAMS8aklLRp7jfkLY/view"
-                     target="_blank" rel="noopener">
-                    <span data-i18n="viewPDF">Voir le PDF</span>
-                  </a>
-                </div>
+                <h4 class="project-title">Uber Dashboard – Data Visualisation & Pilotage de la performance</h4>
+
+                <p class="proj-line"><strong>Objectif :</strong> Piloter l’activité via des KPI (réservations, revenus, annulations, satisfaction).</p>
+                <p class="proj-line"><strong>Méthodologie :</strong> Modélisation, mesures, vues analytiques et dashboard multi-pages orienté décision.</p>
+                <p class="proj-line"><strong>Résultats :</strong> Lecture synthétique des indicateurs clés, segmentation temporelle et analyses par catégories.</p>
+                <p class="proj-line"><strong>Technologies :</strong> Power BI, Data Visualisation, KPI</p>
+
+                <a class="btn btn-sm btn-outline-primary"
+                   href="https://drive.google.com/file/d/1aMobTEHTtnjC5mhkAMS8aklLRp7jfkLY/view"
+                   target="_blank" rel="noopener" data-i18n="viewPDF">
+                  Voir le PDF
+                </a>
               </div>
             </article>
 
-            <!-- du vert -->
+            <!-- Détection d’engins -->
             <article class="project">
-              <div class="project-thumb"><img src="img/du_vert_chez_moi.jpg" alt="Végétalisation Paris"></div>
+              <div class="project-thumb">
+                <img src="img/detection_engins.jpg" alt="Détection d’engins">
+              </div>
               <div>
                 <h4 class="project-title">
-                  <a href="https://github.com/MBASSIE-ISRAEL/Analyse_de_donnees-du_vert_chez_moi" target="_blank" rel="noopener" data-i18n="p1title">
-                    Analyse de la végétalisation à Paris
+                  <a href="https://github.com/MBASSIE-ISRAEL/Detection-engins" target="_blank" rel="noopener">
+                    Détection d’engins – Vision par ordinateur
                   </a>
                 </h4>
-                <p class="project-subtitle" data-i18n="p1sub">Exploration et visualisation de données environnementales (open data).</p>
-                <p class="project-text" data-i18n="p1text">Nettoyage, analyse et visualisations pour produire des insights actionnables.</p>
+
+                <p class="proj-line"><strong>Objectif :</strong> Détecter et classifier des véhicules (ambulances, bus, voitures, camions) à partir d’images.</p>
+                <p class="proj-line"><strong>Méthodologie :</strong> Dataset + annotation, entraînement deep learning, évaluation et tests sur images réelles.</p>
+                <p class="proj-line"><strong>Résultats :</strong> Modèle opérationnel démontrant l’applicabilité de la vision par ordinateur sur un cas d’usage concret.</p>
+                <p class="proj-line"><strong>Technologies :</strong> Python, TensorFlow, OpenCV</p>
+
+                <a class="btn btn-sm btn-outline-primary"
+                   href="https://github.com/MBASSIE-ISRAEL/Detection-engins"
+                   target="_blank" rel="noopener" data-i18n="viewGitHub">
+                  Voir sur GitHub
+                </a>
               </div>
             </article>
 
-            <!-- scraping -->
+            <!-- Chatbot Raven Fox -->
             <article class="project">
-              <div class="project-thumb"><img src="img/scrapping_books.jpg" alt="Scraping Books"></div>
+              <div class="project-thumb">
+                <img src="img/chatbot_raven_fox.jpg" alt="Chatbot Raven Fox">
+              </div>
               <div>
-                <h4 class="project-title"><a href="https://github.com/MBASSIE-ISRAEL/Scrapping_books" target="_blank" rel="noopener">Scraping Books</a></h4>
-                <p class="project-subtitle" data-i18n="p2sub">Web scraping, nettoyage et analyse descriptive.</p>
-                <p class="project-text" data-i18n="p2text">Extraction automatisée et production d’indicateurs/visualisations.</p>
+                <h4 class="project-title">
+                  <a href="https://github.com/MBASSIE-ISRAEL/chatbot_raven_fox" target="_blank" rel="noopener">
+                    Chatbot Raven Fox – Assistant intelligent
+                  </a>
+                </h4>
+
+                <p class="proj-line"><strong>Objectif :</strong> Assistant conversationnel pour accompagner les personnes en fauteuil roulant.</p>
+                <p class="proj-line"><strong>Méthodologie :</strong> Pipeline NLP, intégration LLM, interface accessible.</p>
+                <p class="proj-line"><strong>Résultats :</strong> Chatbot interactif répondant à des requêtes spécifiques du quotidien.</p>
+                <p class="proj-line"><strong>Technologies :</strong> Python, LLM, Streamlit, Hugging Face</p>
+
+                <a class="btn btn-sm btn-outline-primary"
+                   href="https://github.com/MBASSIE-ISRAEL/chatbot_raven_fox"
+                   target="_blank" rel="noopener" data-i18n="viewGitHub">
+                  Voir sur GitHub
+                </a>
               </div>
             </article>
 
-            <hr class="divider my-4">
-
-            <h3 class="subsection-title" data-i18n="dsProjects">Projets Data Science</h3>
-
+            <!-- Risque Crédit -->
             <article class="project">
-              <div class="project-thumb"><img src="img/detection_engins.jpg" alt="Détection d'engins"></div>
+              <div class="project-thumb">
+                <img src="img/crédit_form.jpg" alt="Risque Crédit">
+              </div>
               <div>
-                <h4 class="project-title"><a href="https://github.com/MBASSIE-ISRAEL/Detection-engins" target="_blank" rel="noopener" data-i18n="p3title">Détection d’engins</a></h4>
-                <p class="project-subtitle" data-i18n="p3sub">Computer Vision pour la détection/classification de véhicules.</p>
-                <p class="project-text" data-i18n="p3text">Dataset, entraînement deep learning, évaluation et démo.</p>
+                <h4 class="project-title">
+                  <a href="https://github.com/MBASSIE-ISRAEL/risque_credits" target="_blank" rel="noopener">
+                    Risque Crédit – Modélisation prédictive
+                  </a>
+                </h4>
+
+                <p class="proj-line"><strong>Objectif :</strong> Construire un modèle de scoring pour anticiper les défauts de paiement.</p>
+                <p class="proj-line"><strong>Méthodologie :</strong> Préparation, feature engineering, modèles supervisés, évaluation et déploiement web.</p>
+                <p class="proj-line"><strong>Résultats :</strong> Modèle de classification facilitant la prise de décision et l’évaluation du risque crédit.</p>
+                <p class="proj-line"><strong>Technologies :</strong> Python (Pandas, Scikit-learn), Streamlit</p>
+
+                <a class="btn btn-sm btn-outline-primary"
+                   href="https://github.com/MBASSIE-ISRAEL/risque_credits"
+                   target="_blank" rel="noopener" data-i18n="viewGitHub">
+                  Voir sur GitHub
+                </a>
               </div>
             </article>
 
-            <article class="project">
-              <div class="project-thumb"><img src="img/chatbot_raven_fox.jpg" alt="Chatbot Raven Fox"></div>
-              <div>
-                <h4 class="project-title"><a href="https://github.com/MBASSIE-ISRAEL/chatbot_raven_fox" target="_blank" rel="noopener">Chatbot Raven Fox</a></h4>
-                <p class="project-subtitle" data-i18n="p4sub">Assistant LLM orienté accessibilité.</p>
-                <p class="project-text" data-i18n="p4text">Pipeline NLP, intégration modèle de langage et interface.</p>
-              </div>
-            </article>
-
-            <article class="project">
-              <div class="project-thumb"><img src="img/crédit_form.jpg" alt="Risque Crédit"></div>
-              <div>
-                <h4 class="project-title"><a href="https://github.com/MBASSIE-ISRAEL/risque_credits" target="_blank" rel="noopener" data-i18n="p5title">Risque Crédit (Modélisation prédictive)</a></h4>
-                <p class="project-subtitle" data-i18n="p5sub">Scoring ML + interface Streamlit.</p>
-                <p class="project-text" data-i18n="p5text">Feature engineering, modèle supervisé, évaluation et déploiement.</p>
-              </div>
-            </article>
           </section>
 
           <!-- Experience -->
@@ -448,19 +336,20 @@
                 </div>
                 <div class="exp-role" data-i18n="expSuezRole">Chargé de Projet Data & Achats (Alternance)</div>
                 <div class="exp-desc" data-i18n="expSuezDept">Direction Procurement Excellence, Service Process & Outils</div>
+
                 <ul class="exp-tasks">
-                  <li data-i18n="expSuez1">Pilotage et amélioration de la data achats : consolidation multi-outils (P2P/ERP – S2P/Ivalua), réconciliation et fiabilisation des données.</li>
-                  <li data-i18n="expSuez2">Développement et optimisation de reportings Power BI (montants commandés, segmentation fournisseurs, KPI performance).</li>
-                  <li data-i18n="expSuez3">Maintenance évolutive d’outils décisionnels : anomalies, performances, enrichissement fonctionnel.</li>
-                  <li data-i18n="expSuez4">ETL et automatisation via SQL, Python, Excel.</li>
-                  <li data-i18n="expSuez5">Documentation technico-fonctionnelle et amélioration de l’UX des outils internes.</li>
+                  <li data-i18n="expSuez1">Pilotage et amélioration de la data achats : consolidation multi-outils (P2P/ERP – S2P/Ivalua), réconciliation des référentiels fournisseurs et fiabilisation des données.</li>
+                  <li data-i18n="expSuez2">Développement et optimisation de reportings Power BI pour le pilotage achats (montants commandés pluriannuels, segmentation fournisseurs, KPI de performance).</li>
+                  <li data-i18n="expSuez3">Maintenance évolutive d’outils d’aide à la décision : résolution d’anomalies fonctionnelles, optimisation des performances et enrichissement fonctionnel.</li>
+                  <li data-i18n="expSuez4">Extraction, transformation et automatisation de flux de données via SQL, Python et Excel.</li>
+                  <li data-i18n="expSuez5">Conception de guides utilisateurs, documentation technico-fonctionnelle et amélioration de l’UX des outils internes.</li>
                 </ul>
               </div>
               <div class="exp-actions">
                 <a class="btn btn-sm btn-outline-primary"
                    href="https://drive.google.com/file/d/187qKV-0qS7RUndIaeu0PHjp11lmrXhGR/view"
-                   target="_blank" rel="noopener">
-                  <span data-i18n="viewProof">Voir attestation</span>
+                   target="_blank" rel="noopener" data-i18n="viewProof">
+                  Voir attestation
                 </a>
               </div>
             </div>
@@ -476,19 +365,20 @@
                 </div>
                 <div class="exp-role" data-i18n="expNpspRole">Data Analyst Achats (Stage)</div>
                 <div class="exp-desc" data-i18n="expNpspDept">Centrale d’achats pharmaceutiques — Direction Logistique Pharmaceutique</div>
+
                 <ul class="exp-tasks">
                   <li data-i18n="expNpsp1">Analyses statistiques pour la stratégie d’achat (consommations, prévisions, prix fournisseurs).</li>
                   <li data-i18n="expNpsp2">Structuration et gestion de bases de données achats sous Excel et Access.</li>
                   <li data-i18n="expNpsp3">Développement et automatisation de reportings décisionnels.</li>
                   <li data-i18n="expNpsp4">Production de rapports et présentations pour la Direction Achats & Approvisionnements.</li>
-                  <li data-i18n="expNpsp5">Traitement de factures proforma, suivi de commandes, numérisation et archivage documentaire.</li>
+                  <li data-i18n="expNpsp5">Soutien opérationnel : traitement de factures proforma, suivi de commandes, numérisation et archivage documentaire.</li>
                 </ul>
               </div>
               <div class="exp-actions">
                 <a class="btn btn-sm btn-outline-primary"
                    href="https://drive.google.com/file/d/1QEKvgwHaPN2fnMoH3rN8yctn_nzMMrNd/view"
-                   target="_blank" rel="noopener">
-                  <span data-i18n="viewProof">Voir attestation</span>
+                   target="_blank" rel="noopener" data-i18n="viewProof">
+                  Voir attestation
                 </a>
               </div>
             </div>
@@ -532,8 +422,8 @@
               <div class="edu-actions">
                 <a class="btn btn-sm btn-outline-primary"
                    href="https://drive.google.com/file/d/1OQnAzpGqfuzEVnek0SbpFgQWAxSbvzMM/view"
-                   target="_blank" rel="noopener">
-                  <span data-i18n="viewDiploma">Voir diplôme</span>
+                   target="_blank" rel="noopener" data-i18n="viewDiploma">
+                  Voir diplôme
                 </a>
               </div>
             </div>
@@ -555,11 +445,12 @@
               <div class="edu-actions">
                 <a class="btn btn-sm btn-outline-primary"
                    href="https://drive.google.com/file/d/1xvfXWHWnsRce-0T0TXfFwUCTAU7v7uvE/view"
-                   target="_blank" rel="noopener">
-                  <span data-i18n="viewDiploma">Voir diplôme</span>
+                   target="_blank" rel="noopener" data-i18n="viewDiploma">
+                  Voir diplôme
                 </a>
               </div>
             </div>
+
           </section>
 
           <!-- Certifications -->
@@ -568,7 +459,7 @@
 
             <div class="cert-simple-list">
               <div class="cert-simple-item">
-                <div>
+                <div class="cert-simple-body">
                   <h5 class="mb-1" data-i18n="certRgpdTitle">Protection des données (RGPD)</h5>
                   <div class="cert-simple-meta" data-i18n="certRgpdMeta">SUEZ • 45 minutes • Mars 2025</div>
                   <p class="cert-simple-text" data-i18n="certRgpdDesc">Intégrer le respect du RGPD dans une gestion professionnelle des données.</p>
@@ -583,7 +474,7 @@
               </div>
 
               <div class="cert-simple-item">
-                <div>
+                <div class="cert-simple-body">
                   <h5 class="mb-1" data-i18n="certCyberTitle">Cybersecurity Awareness</h5>
                   <div class="cert-simple-meta" data-i18n="certCyberMeta">SUEZ • 30 minutes • Octobre 2024</div>
                   <p class="cert-simple-text" data-i18n="certCyberDesc">Sensibilisation aux risques cyber et aux bonnes pratiques de sécurité de l’information.</p>
@@ -604,6 +495,7 @@
           </p>
 
         </section>
+
       </div>
     </div>
   </main>
@@ -611,4 +503,3 @@
   <script src="assets/main.js"></script>
 </body>
 </html>
-
