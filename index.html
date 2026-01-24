@@ -27,10 +27,15 @@
               <a class="icon-link" href="https://github.com/MBASSIE-ISRAEL" target="_blank" rel="noopener" aria-label="GitHub">
                 <i class="fa-brands fa-github"></i>
               </a>
+
               <a class="icon-link" href="https://www.linkedin.com/in/israel-dedieu/" target="_blank" rel="noopener" aria-label="LinkedIn">
                 <i class="fa-brands fa-linkedin"></i>
               </a>
-              <a class="icon-link" href="mailto:israelmbassie02@gmail.com" aria-label="Email">
+
+              <!-- Envelope -> opens a prefilled email -->
+              <a class="icon-link"
+                 href="mailto:israelmbassie02@gmail.com?subject=Contact%20-%20Portfolio&body=Bonjour%20Israel%2C%0A%0AJe%20vous%20contacte%20suite%20%C3%A0%20votre%20portfolio.%0A%0A"
+                 aria-label="Email">
                 <i class="fa-solid fa-envelope"></i>
               </a>
             </div>
@@ -84,7 +89,10 @@
             <ul class="list-unstyled mb-0">
               <li class="d-flex gap-2 mb-2"><i class="fa-solid fa-location-dot mt-1"></i><div>Paris, France</div></li>
               <li class="d-flex gap-2 mb-2"><i class="fa-solid fa-envelope mt-1"></i>
-                <div><a class="link-soft" href="mailto:israelmbassie02@gmail.com">israelmbassie02@gmail.com</a></div>
+                <div><a class="link-soft"
+                        href="mailto:israelmbassie02@gmail.com?subject=Contact%20-%20Portfolio&body=Bonjour%20Israel%2C%0A%0AJe%20vous%20contacte%20suite%20%C3%A0%20votre%20portfolio.%0A%0A">
+                  israelmbassie02@gmail.com
+                </a></div>
               </li>
               <li class="d-flex gap-2"><i class="fa-brands fa-github mt-1"></i>
                 <div><a class="link-soft" href="https://github.com/MBASSIE-ISRAEL" target="_blank" rel="noopener">github.com/MBASSIE-ISRAEL</a></div>
@@ -141,7 +149,7 @@
             </div>
           </section>
 
-          <!-- Formation (sous compétences) -->
+          <!-- Formation -->
           <section id="education" class="cardx p-4 mt-4">
             <h2 class="section-title" data-i18n="education">Formation</h2>
 
@@ -176,7 +184,7 @@
               <div>
                 <div class="edu-mini-title">Institut Universitaire d'Abidjan</div>
                 <div class="edu-mini-meta" data-i18n="eduIuaDates">déc 2019 – sept 2022</div>
-                <div class="edu-mini-program" data-i18n="eduIuaProgram">Licence en Mathématiques Appliquées — option Actuariat</div>
+                <div class="edu-mini-program" data-i18n="eduIuaProgram">Licence en Mathématiques Appliquées (option Actuariat)</div>
                 <a class="btn btn-sm btn-outline-primary mt-2"
                    href="https://drive.google.com/file/d/1xvfXWHWnsRce-0T0TXfFwUCTAU7v7uvE/view"
                    target="_blank" rel="noopener" data-i18n="viewDiploma">Voir diplôme</a>
@@ -184,7 +192,7 @@
             </div>
           </section>
 
-          <!-- Certifications (sous formation) -->
+          <!-- Certifications -->
           <section id="certifications" class="cardx p-4 mt-4">
             <h2 class="section-title" data-i18n="certsTitle">Certifications</h2>
 
@@ -207,12 +215,12 @@
             </div>
           </section>
 
-          <!-- Langues -->
+          <!-- Langues (":" au lieu de "—") -->
           <section class="cardx p-4 mt-4">
             <h2 class="section-title" data-i18n="languages">Langues</h2>
             <ul class="mb-0">
-              <li data-i18n="lang1">Français — Langue maternelle</li>
-              <li data-i18n="lang2">Anglais — Niveau B2</li>
+              <li data-i18n="lang1">Français : Langue maternelle</li>
+              <li data-i18n="lang2">Anglais : Niveau B2</li>
             </ul>
           </section>
 
@@ -230,7 +238,7 @@
             </p>
           </section>
 
-          <!-- Experience (AVANT projets) -->
+          <!-- Experience -->
           <section id="experience" class="cardx p-4 mt-4">
             <h2 class="section-title" data-i18n="experience">Expériences professionnelles</h2>
 
@@ -255,7 +263,6 @@
                   <li data-i18n="expSuez5">Conception de guides utilisateurs, documentation technico-fonctionnelle et amélioration de l’UX des outils internes.</li>
                 </ul>
 
-                <!-- OUTILS (en bas) -->
                 <div class="tools-row">
                   <span class="tool">Power BI</span>
                   <span class="tool">SQL</span>
@@ -288,7 +295,7 @@
                 </div>
 
                 <div class="exp-role" data-i18n="expNpspRole">Data Analyst Achats (Stage)</div>
-                <div class="exp-desc" data-i18n="expNpspDept">Centrale d’achats pharmaceutiques — Direction Logistique Pharmaceutique</div>
+                <div class="exp-desc" data-i18n="expNpspDept">Centrale d’achats pharmaceutiques, Direction Logistique Pharmaceutique</div>
 
                 <ul class="exp-tasks">
                   <li data-i18n="expNpsp1">Analyses statistiques pour la stratégie d’achat (consommations, prévisions, prix fournisseurs).</li>
@@ -298,7 +305,6 @@
                   <li data-i18n="expNpsp5">Soutien opérationnel : traitement de factures proforma, suivi de commandes, numérisation et archivage documentaire.</li>
                 </ul>
 
-                <!-- OUTILS (en bas) -->
                 <div class="tools-row">
                   <span class="tool">Excel</span>
                   <span class="tool">Access</span>
@@ -318,7 +324,7 @@
             </div>
           </section>
 
-          <!-- Projects (APRÈS expériences) -->
+          <!-- Projects -->
           <section id="projects" class="cardx p-4 mt-4">
             <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
               <h2 class="section-title mb-0" data-i18n="latestProjects">Projets</h2>
@@ -327,21 +333,30 @@
 
             <h3 class="subsection-title mt-4" data-i18n="daProjects">Data Analyst</h3>
 
-            <!-- Uber Dashboard (Data Analyst) -->
+            <!-- Uber Dashboard (title links to PDF) -->
             <article class="project project-right">
               <div class="project-content">
-                <h4 class="project-title">Uber Dashboard – Data Visualisation & Pilotage de la performance</h4>
+                <h4 class="project-title">
+                  <a href="https://drive.google.com/file/d/1aMobTEHTtnjC5mhkAMS8aklLRp7jfkLY/view" target="_blank" rel="noopener">
+                    <span data-i18n="p_uber_title">Uber Dashboard (Data Visualisation & Pilotage de la performance)</span>
+                  </a>
+                </h4>
 
                 <div class="proj-text">
-                  <p><strong>Contexte & enjeux :</strong><br>
-                    Dans des environnements opérationnels à fort volume de données, la data visualisation est essentielle pour transformer l’information brute en indicateurs décisionnels exploitables.
-                  </p>
-                  <p><strong>Approche & réalisation :</strong><br>
-                    J’ai conçu un tableau de bord Power BI pour suivre l’activité à travers des KPI clés (réservations, revenus, annulations, satisfaction), en structurant le modèle de données et les mesures.
-                  </p>
-                  <p><strong>Apports & résultats :</strong><br>
-                    Le dashboard offre une lecture synthétique et dynamique de la performance et facilite l’analyse temporelle et la segmentation des résultats.
-                  </p>
+                  <div class="p-row">
+                    <div class="p-label" data-i18n="lbl_context">Contexte & enjeux</div>
+                    <div class="p-text" data-i18n="p_uber_ctx"></div>
+                  </div>
+
+                  <div class="p-row">
+                    <div class="p-label" data-i18n="lbl_method">Approche & réalisation</div>
+                    <div class="p-text" data-i18n="p_uber_meth"></div>
+                  </div>
+
+                  <div class="p-row">
+                    <div class="p-label" data-i18n="lbl_impact">Apports & résultats</div>
+                    <div class="p-text" data-i18n="p_uber_res"></div>
+                  </div>
                 </div>
 
                 <div class="tools-row">
@@ -370,20 +385,25 @@
               <div class="project-content">
                 <h4 class="project-title">
                   <a href="https://github.com/MBASSIE-ISRAEL/Analyse_de_donnees-du_vert_chez_moi" target="_blank" rel="noopener">
-                    Analyse de la végétalisation à Paris
+                    <span data-i18n="p_green_title">Analyse de la végétalisation à Paris</span>
                   </a>
                 </h4>
 
                 <div class="proj-text">
-                  <p><strong>Contexte & enjeux :</strong><br>
-                    La végétalisation urbaine est un levier d’adaptation climatique (îlots de chaleur, qualité de l’air) et un indicateur clé de bien-être urbain.
-                  </p>
-                  <p><strong>Approche & réalisation :</strong><br>
-                    J’ai exploité des données open data pour analyser la répartition de la végétation par zones et arrondissements, en assurant nettoyage, structuration et analyses descriptives.
-                  </p>
-                  <p><strong>Apports & résultats :</strong><br>
-                    Mise en évidence de disparités territoriales et identification de zones prioritaires pour des actions de verdissement ciblées.
-                  </p>
+                  <div class="p-row">
+                    <div class="p-label" data-i18n="lbl_context">Contexte & enjeux</div>
+                    <div class="p-text" data-i18n="p_green_ctx"></div>
+                  </div>
+
+                  <div class="p-row">
+                    <div class="p-label" data-i18n="lbl_method">Approche & réalisation</div>
+                    <div class="p-text" data-i18n="p_green_meth"></div>
+                  </div>
+
+                  <div class="p-row">
+                    <div class="p-label" data-i18n="lbl_impact">Apports & résultats</div>
+                    <div class="p-text" data-i18n="p_green_res"></div>
+                  </div>
                 </div>
 
                 <div class="tools-row">
@@ -407,25 +427,30 @@
 
             <hr class="divider my-4">
 
-            <!-- Scraping Books -->
+            <!-- Scraping Books (no long dash; use parentheses) -->
             <article class="project project-right">
               <div class="project-content">
                 <h4 class="project-title">
                   <a href="https://github.com/MBASSIE-ISRAEL/Scrapping_books" target="_blank" rel="noopener">
-                    Scraping Books – Analyse de données issues du web
+                    <span data-i18n="p_books_title">Scraping Books (Analyse de données issues du web)</span>
                   </a>
                 </h4>
 
                 <div class="proj-text">
-                  <p><strong>Contexte & enjeux :</strong><br>
-                    Les données web sont une source importante pour analyser des tendances, à condition de pouvoir les collecter et structurer efficacement.
-                  </p>
-                  <p><strong>Approche & réalisation :</strong><br>
-                    J’ai développé un pipeline de scraping pour extraire catégories, prix et notations, puis construit un dataset nettoyé et prêt pour l’analyse.
-                  </p>
-                  <p><strong>Apports & résultats :</strong><br>
-                    Analyse comparative des segments, distributions de prix et notes, et production de visualisations synthétiques.
-                  </p>
+                  <div class="p-row">
+                    <div class="p-label" data-i18n="lbl_context">Contexte & enjeux</div>
+                    <div class="p-text" data-i18n="p_books_ctx"></div>
+                  </div>
+
+                  <div class="p-row">
+                    <div class="p-label" data-i18n="lbl_method">Approche & réalisation</div>
+                    <div class="p-text" data-i18n="p_books_meth"></div>
+                  </div>
+
+                  <div class="p-row">
+                    <div class="p-label" data-i18n="lbl_impact">Apports & résultats</div>
+                    <div class="p-text" data-i18n="p_books_res"></div>
+                  </div>
                 </div>
 
                 <div class="tools-row">
@@ -451,25 +476,30 @@
 
             <h3 class="subsection-title" data-i18n="dsProjects">Data Science</h3>
 
-            <!-- Détection d’engins -->
+            <!-- Detection Engins -->
             <article class="project project-right">
               <div class="project-content">
                 <h4 class="project-title">
                   <a href="https://github.com/MBASSIE-ISRAEL/Detection-engins" target="_blank" rel="noopener">
-                    Détection d’engins – Vision par ordinateur
+                    <span data-i18n="p_cv_title">Détection d’engins (Vision par ordinateur)</span>
                   </a>
                 </h4>
 
                 <div class="proj-text">
-                  <p><strong>Contexte & enjeux :</strong><br>
-                    La reconnaissance d’objets est essentielle pour des applications en mobilité, sécurité et analyse vidéo, où l’automatisation améliore rapidité et fiabilité.
-                  </p>
-                  <p><strong>Approche & réalisation :</strong><br>
-                    J’ai constitué un dataset, entraîné un modèle de deep learning et évalué ses performances pour détecter et classifier des véhicules.
-                  </p>
-                  <p><strong>Apports & résultats :</strong><br>
-                    Modèle capable d’identifier automatiquement différents engins avec un bon niveau de précision sur des images réelles.
-                  </p>
+                  <div class="p-row">
+                    <div class="p-label" data-i18n="lbl_context">Contexte & enjeux</div>
+                    <div class="p-text" data-i18n="p_cv_ctx"></div>
+                  </div>
+
+                  <div class="p-row">
+                    <div class="p-label" data-i18n="lbl_method">Approche & réalisation</div>
+                    <div class="p-text" data-i18n="p_cv_meth"></div>
+                  </div>
+
+                  <div class="p-row">
+                    <div class="p-label" data-i18n="lbl_impact">Apports & résultats</div>
+                    <div class="p-text" data-i18n="p_cv_res"></div>
+                  </div>
                 </div>
 
                 <div class="tools-row">
@@ -493,25 +523,30 @@
 
             <hr class="divider my-4">
 
-            <!-- Chatbot Raven Fox -->
+            <!-- Chatbot -->
             <article class="project project-right">
               <div class="project-content">
                 <h4 class="project-title">
                   <a href="https://github.com/MBASSIE-ISRAEL/chatbot_raven_fox" target="_blank" rel="noopener">
-                    Chatbot Raven Fox – Assistant intelligent
+                    <span data-i18n="p_chat_title">Chatbot Raven Fox (Assistant intelligent)</span>
                   </a>
                 </h4>
 
                 <div class="proj-text">
-                  <p><strong>Contexte & enjeux :</strong><br>
-                    Les assistants conversationnels améliorent l’accessibilité en fournissant une aide immédiate et contextualisée, notamment pour des besoins spécifiques.
-                  </p>
-                  <p><strong>Approche & réalisation :</strong><br>
-                    J’ai conçu un pipeline NLP et intégré un modèle de langage, avec une interface simple et accessible pour un usage terrain.
-                  </p>
-                  <p><strong>Apports & résultats :</strong><br>
-                    Prototype fonctionnel répondant à des requêtes ciblées, base solide pour des évolutions (RAG, données temps réel, géolocalisation).
-                  </p>
+                  <div class="p-row">
+                    <div class="p-label" data-i18n="lbl_context">Contexte & enjeux</div>
+                    <div class="p-text" data-i18n="p_chat_ctx"></div>
+                  </div>
+
+                  <div class="p-row">
+                    <div class="p-label" data-i18n="lbl_method">Approche & réalisation</div>
+                    <div class="p-text" data-i18n="p_chat_meth"></div>
+                  </div>
+
+                  <div class="p-row">
+                    <div class="p-label" data-i18n="lbl_impact">Apports & résultats</div>
+                    <div class="p-text" data-i18n="p_chat_res"></div>
+                  </div>
                 </div>
 
                 <div class="tools-row">
@@ -535,25 +570,30 @@
 
             <hr class="divider my-4">
 
-            <!-- Risque Crédit -->
+            <!-- Credit Risk -->
             <article class="project project-right">
               <div class="project-content">
                 <h4 class="project-title">
                   <a href="https://github.com/MBASSIE-ISRAEL/risque_credits" target="_blank" rel="noopener">
-                    Risque Crédit – Modélisation prédictive
+                    <span data-i18n="p_credit_title">Risque Crédit (Modélisation prédictive)</span>
                   </a>
                 </h4>
 
                 <div class="proj-text">
-                  <p><strong>Contexte & enjeux :</strong><br>
-                    Anticiper le risque de défaut est crucial pour sécuriser les décisions d’octroi et optimiser la gestion du risque.
-                  </p>
-                  <p><strong>Approche & réalisation :</strong><br>
-                    J’ai construit un modèle de scoring : préparation, feature engineering, modèles supervisés, évaluation et déploiement via une interface.
-                  </p>
-                  <p><strong>Apports & résultats :</strong><br>
-                    Modèle performant permettant d’estimer la probabilité de défaut et de simuler une décision dans un flux machine learning complet.
-                  </p>
+                  <div class="p-row">
+                    <div class="p-label" data-i18n="lbl_context">Contexte & enjeux</div>
+                    <div class="p-text" data-i18n="p_credit_ctx"></div>
+                  </div>
+
+                  <div class="p-row">
+                    <div class="p-label" data-i18n="lbl_method">Approche & réalisation</div>
+                    <div class="p-text" data-i18n="p_credit_meth"></div>
+                  </div>
+
+                  <div class="p-row">
+                    <div class="p-label" data-i18n="lbl_impact">Apports & résultats</div>
+                    <div class="p-text" data-i18n="p_credit_res"></div>
+                  </div>
                 </div>
 
                 <div class="tools-row">
@@ -574,6 +614,7 @@
                 <img src="img/crédit_form.jpg" alt="Risque Crédit">
               </div>
             </article>
+
           </section>
 
           <p class="text-center text-muted small mt-4 mb-0" data-i18n="quote">
