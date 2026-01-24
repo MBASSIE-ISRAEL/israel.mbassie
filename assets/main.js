@@ -42,10 +42,8 @@
       viewCert: "Voir la certification",
       certRgpdTitle: "Protection des données (RGPD)",
       certRgpdMeta: "SUEZ • 45 minutes • Mars 2025",
-      certRgpdDesc: "Intégrer le respect du RGPD dans une gestion professionnelle des données.",
       certCyberTitle: "Cybersecurity Awareness",
       certCyberMeta: "SUEZ • 30 minutes • Octobre 2024",
-      certCyberDesc: "Sensibilisation aux risques cyber et aux bonnes pratiques de sécurité de l’information.",
       quote: "« La donnée n’a de valeur que lorsqu’elle éclaire une décision. »",
 
       expSuezDates: "sept 2024 – sept 2025",
@@ -108,10 +106,8 @@
       viewCert: "View certification",
       certRgpdTitle: "Data Protection (GDPR)",
       certRgpdMeta: "SUEZ • 45 minutes • March 2025",
-      certRgpdDesc: "Integrating GDPR compliance into professional data management practices.",
       certCyberTitle: "Cybersecurity Awareness",
       certCyberMeta: "SUEZ • 30 minutes • October 2024",
-      certCyberDesc: "Awareness of cyber risks and best practices in information security.",
       quote: "“Data only matters when it informs decisions.”",
 
       expSuezDates: "Sep 2024 – Sep 2025",
