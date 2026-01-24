@@ -63,8 +63,8 @@
     <div class="container">
       <div class="d-flex flex-wrap gap-2 align-items-center">
         <a class="subnav-link" href="#about" data-i18n="navAbout">À propos</a>
-        <a class="subnav-link" href="#projects" data-i18n="navProjects">Projets</a>
         <a class="subnav-link" href="#experience" data-i18n="navExperience">Expériences</a>
+        <a class="subnav-link" href="#projects" data-i18n="navProjects">Projets</a>
         <a class="subnav-link" href="#education" data-i18n="navEducation">Formation</a>
         <a class="subnav-link" href="#certifications" data-i18n="navCerts">Certifications</a>
       </div>
@@ -141,7 +141,7 @@
             </div>
           </section>
 
-          <!-- Formation (SOUS compétences) -->
+          <!-- Formation (sous compétences) -->
           <section id="education" class="cardx p-4 mt-4">
             <h2 class="section-title" data-i18n="education">Formation</h2>
 
@@ -184,7 +184,7 @@
             </div>
           </section>
 
-          <!-- Certifications (SOUS formation) -->
+          <!-- Certifications (sous formation) -->
           <section id="certifications" class="cardx p-4 mt-4">
             <h2 class="section-title" data-i18n="certsTitle">Certifications</h2>
 
@@ -207,7 +207,7 @@
             </div>
           </section>
 
-          <!-- Langues (APRÈS formation/certifs) -->
+          <!-- Langues -->
           <section class="cardx p-4 mt-4">
             <h2 class="section-title" data-i18n="languages">Langues</h2>
             <ul class="mb-0">
@@ -230,178 +230,20 @@
             </p>
           </section>
 
-          <!-- Projects -->
-          <section id="projects" class="cardx p-4 mt-4">
-            <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
-              <h2 class="section-title mb-0" data-i18n="latestProjects">Projets</h2>
-              <span class="badge badge-soft" data-i18n="selected">Sélection</span>
-            </div>
-
-            <h3 class="subsection-title mt-4" data-i18n="daProjects">Data Analyst</h3>
-
-             <!-- Uber Dashboard -->
-            <article class="project">
-              <div class="project-thumb">
-                <img src="img/Uber_dashboard.jpg" alt="Uber Dashboard Power BI">
-              </div>
-              <div>
-                <h4 class="project-title">Uber Dashboard – Data Visualisation & Pilotage de la performance</h4>
-
-                <p class="proj-line"><strong>Objectif :</strong> Piloter l’activité via des KPI (réservations, revenus, annulations, satisfaction).</p>
-                <p class="proj-line"><strong>Méthodologie :</strong> Modélisation, mesures, vues analytiques et dashboard multi-pages orienté décision.</p>
-                <p class="proj-line"><strong>Résultats :</strong> Lecture synthétique des indicateurs clés, segmentation temporelle et analyses par catégories.</p>
-                <p class="proj-line"><strong>Technologies :</strong> Power BI, Data Visualisation, KPI</p>
-
-                <a class="btn btn-sm btn-outline-primary"
-                   href="https://drive.google.com/file/d/1aMobTEHTtnjC5mhkAMS8aklLRp7jfkLY/view"
-                   target="_blank" rel="noopener" data-i18n="viewPDF">
-                  Voir le PDF
-                </a>
-              </div>
-            </article>
-
-            <!-- Végétalisation -->
-            <article class="project">
-              <div class="project-thumb">
-                <img src="img/du_vert_chez_moi.jpg" alt="Analyse de la végétalisation à Paris">
-              </div>
-              <div>
-                <h4 class="project-title">
-                  <a href="https://github.com/MBASSIE-ISRAEL/Analyse_de_donnees-du_vert_chez_moi" target="_blank" rel="noopener">
-                    Analyse de la végétalisation à Paris
-                  </a>
-                </h4>
-
-                <p class="proj-line"><strong>Objectif :</strong> Étudier la répartition spatiale de la végétation à Paris à partir de données ouvertes afin d’identifier des disparités territoriales.</p>
-                <p class="proj-line"><strong>Méthodologie :</strong> Collecte open data, nettoyage/structuration, analyses statistiques descriptives et visualisations.</p>
-                <p class="proj-line"><strong>Résultats :</strong> Identification des zones les plus/moins végétalisées et mise en évidence d’écarts entre arrondissements.</p>
-                <p class="proj-line"><strong>Technologies :</strong> Python (Pandas, Matplotlib, Seaborn)</p>
-
-                <a class="btn btn-sm btn-outline-primary"
-                   href="https://github.com/MBASSIE-ISRAEL/Analyse_de_donnees-du_vert_chez_moi"
-                   target="_blank" rel="noopener" data-i18n="viewGitHub">
-                  Voir sur GitHub
-                </a>
-              </div>
-            </article>
-
-            <!-- Scraping Books -->
-            <article class="project">
-              <div class="project-thumb">
-                <img src="img/scrapping_books.jpg" alt="Scraping Books">
-              </div>
-              <div>
-                <h4 class="project-title">
-                  <a href="https://github.com/MBASSIE-ISRAEL/Scrapping_books" target="_blank" rel="noopener">
-                    Scraping Books – Analyse de données issues du web
-                  </a>
-                </h4>
-
-                <p class="proj-line"><strong>Objectif :</strong> Extraire automatiquement des données de livres afin d’analyser catégories, prix et notations.</p>
-                <p class="proj-line"><strong>Méthodologie :</strong> Web scraping, nettoyage/transformation, analyses et visualisations.</p>
-                <p class="proj-line"><strong>Résultats :</strong> Dataset exploitable + comparaisons par catégories, distributions de prix et notes.</p>
-                <p class="proj-line"><strong>Technologies :</strong> Python (BeautifulSoup, Pandas, Matplotlib)</p>
-
-                <a class="btn btn-sm btn-outline-primary"
-                   href="https://github.com/MBASSIE-ISRAEL/Scrapping_books"
-                   target="_blank" rel="noopener" data-i18n="viewGitHub">
-                  Voir sur GitHub
-                </a>
-              </div>
-            </article>
-
-            <hr class="divider my-4">
-
-            <h3 class="subsection-title" data-i18n="dsProjects">Data Science</h3>
-
-            <!-- Détection d’engins -->
-            <article class="project">
-              <div class="project-thumb">
-                <img src="img/detection_engins.jpg" alt="Détection d’engins">
-              </div>
-              <div>
-                <h4 class="project-title">
-                  <a href="https://github.com/MBASSIE-ISRAEL/Detection-engins" target="_blank" rel="noopener">
-                    Détection d’engins – Vision par ordinateur
-                  </a>
-                </h4>
-
-                <p class="proj-line"><strong>Objectif :</strong> Détecter et classifier des véhicules (ambulances, bus, voitures, camions) à partir d’images.</p>
-                <p class="proj-line"><strong>Méthodologie :</strong> Dataset + annotation, entraînement deep learning, évaluation et tests sur images réelles.</p>
-                <p class="proj-line"><strong>Résultats :</strong> Modèle opérationnel démontrant l’applicabilité de la vision par ordinateur sur un cas d’usage concret.</p>
-                <p class="proj-line"><strong>Technologies :</strong> Python, TensorFlow, OpenCV</p>
-
-                <a class="btn btn-sm btn-outline-primary"
-                   href="https://github.com/MBASSIE-ISRAEL/Detection-engins"
-                   target="_blank" rel="noopener" data-i18n="viewGitHub">
-                  Voir sur GitHub
-                </a>
-              </div>
-            </article>
-
-            <!-- Chatbot Raven Fox -->
-            <article class="project">
-              <div class="project-thumb">
-                <img src="img/chatbot_raven_fox.jpg" alt="Chatbot Raven Fox">
-              </div>
-              <div>
-                <h4 class="project-title">
-                  <a href="https://github.com/MBASSIE-ISRAEL/chatbot_raven_fox" target="_blank" rel="noopener">
-                    Chatbot Raven Fox – Assistant intelligent
-                  </a>
-                </h4>
-
-                <p class="proj-line"><strong>Objectif :</strong> Assistant conversationnel pour accompagner les personnes en fauteuil roulant.</p>
-                <p class="proj-line"><strong>Méthodologie :</strong> Pipeline NLP, intégration LLM, interface accessible.</p>
-                <p class="proj-line"><strong>Résultats :</strong> Chatbot interactif répondant à des requêtes spécifiques du quotidien.</p>
-                <p class="proj-line"><strong>Technologies :</strong> Python, LLM, Streamlit, Hugging Face</p>
-
-                <a class="btn btn-sm btn-outline-primary"
-                   href="https://github.com/MBASSIE-ISRAEL/chatbot_raven_fox"
-                   target="_blank" rel="noopener" data-i18n="viewGitHub">
-                  Voir sur GitHub
-                </a>
-              </div>
-            </article>
-
-            <!-- Risque Crédit -->
-            <article class="project">
-              <div class="project-thumb">
-                <img src="img/crédit_form.jpg" alt="Risque Crédit">
-              </div>
-              <div>
-                <h4 class="project-title">
-                  <a href="https://github.com/MBASSIE-ISRAEL/risque_credits" target="_blank" rel="noopener">
-                    Risque Crédit – Modélisation prédictive
-                  </a>
-                </h4>
-
-                <p class="proj-line"><strong>Objectif :</strong> Construire un modèle de scoring pour anticiper les défauts de paiement.</p>
-                <p class="proj-line"><strong>Méthodologie :</strong> Préparation, feature engineering, modèles supervisés, évaluation et déploiement web.</p>
-                <p class="proj-line"><strong>Résultats :</strong> Modèle de classification facilitant la prise de décision et l’évaluation du risque crédit.</p>
-                <p class="proj-line"><strong>Technologies :</strong> Python (Pandas, Scikit-learn), Streamlit</p>
-
-                <a class="btn btn-sm btn-outline-primary"
-                   href="https://github.com/MBASSIE-ISRAEL/risque_credits"
-                   target="_blank" rel="noopener" data-i18n="viewGitHub">
-                  Voir sur GitHub
-                </a>
-              </div>
-            </article>
-
-          </section>
-
-          <!-- Experience -->
+          <!-- Experience (AVANT projets) -->
           <section id="experience" class="cardx p-4 mt-4">
             <h2 class="section-title" data-i18n="experience">Expériences professionnelles</h2>
 
+            <!-- SUEZ -->
             <div class="exp-item">
               <div class="exp-logo"><img src="img/suez.jpg" alt="SUEZ"></div>
+
               <div class="exp-body">
                 <div class="exp-top">
                   <h5 class="mb-1">SUEZ</h5>
                   <span class="exp-meta">Paris, France • <span data-i18n="expSuezDates">sept 2024 – sept 2025</span></span>
                 </div>
+
                 <div class="exp-role" data-i18n="expSuezRole">Chargé de Projet Data & Achats (Alternance)</div>
                 <div class="exp-desc" data-i18n="expSuezDept">Direction Procurement Excellence, Service Process & Outils</div>
 
@@ -412,7 +254,18 @@
                   <li data-i18n="expSuez4">Extraction, transformation et automatisation de flux de données via SQL, Python et Excel.</li>
                   <li data-i18n="expSuez5">Conception de guides utilisateurs, documentation technico-fonctionnelle et amélioration de l’UX des outils internes.</li>
                 </ul>
+
+                <!-- OUTILS (en bas) -->
+                <div class="tools-row">
+                  <span class="tool">Power BI</span>
+                  <span class="tool">SQL</span>
+                  <span class="tool">Python</span>
+                  <span class="tool">Power Automate</span>
+                  <span class="tool">Data Quality</span>
+                  <span class="tool">Procurement</span>
+                </div>
               </div>
+
               <div class="exp-actions">
                 <a class="btn btn-sm btn-outline-primary"
                    href="https://drive.google.com/file/d/187qKV-0qS7RUndIaeu0PHjp11lmrXhGR/view"
@@ -424,13 +277,16 @@
 
             <hr class="divider my-3">
 
+            <!-- NPSP -->
             <div class="exp-item">
               <div class="exp-logo"><img src="img/npspci.jpg" alt="NPSP CI"></div>
+
               <div class="exp-body">
                 <div class="exp-top">
                   <h5 class="mb-1">Nouvelle Pharmacie de la Santé Publique de Côte d’Ivoire</h5>
                   <span class="exp-meta">Abidjan, Côte d’Ivoire • <span data-i18n="expNpspDates">nov 2022 – août 2023</span></span>
                 </div>
+
                 <div class="exp-role" data-i18n="expNpspRole">Data Analyst Achats (Stage)</div>
                 <div class="exp-desc" data-i18n="expNpspDept">Centrale d’achats pharmaceutiques — Direction Logistique Pharmaceutique</div>
 
@@ -441,7 +297,17 @@
                   <li data-i18n="expNpsp4">Production de rapports et présentations pour la Direction Achats & Approvisionnements.</li>
                   <li data-i18n="expNpsp5">Soutien opérationnel : traitement de factures proforma, suivi de commandes, numérisation et archivage documentaire.</li>
                 </ul>
+
+                <!-- OUTILS (en bas) -->
+                <div class="tools-row">
+                  <span class="tool">Excel</span>
+                  <span class="tool">Access</span>
+                  <span class="tool">Reporting</span>
+                  <span class="tool">Statistical Analysis</span>
+                  <span class="tool">Procurement</span>
+                </div>
               </div>
+
               <div class="exp-actions">
                 <a class="btn btn-sm btn-outline-primary"
                    href="https://drive.google.com/file/d/1QEKvgwHaPN2fnMoH3rN8yctn_nzMMrNd/view"
@@ -450,6 +316,264 @@
                 </a>
               </div>
             </div>
+          </section>
+
+          <!-- Projects (APRÈS expériences) -->
+          <section id="projects" class="cardx p-4 mt-4">
+            <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
+              <h2 class="section-title mb-0" data-i18n="latestProjects">Projets</h2>
+              <span class="badge badge-soft" data-i18n="selected">Sélection</span>
+            </div>
+
+            <h3 class="subsection-title mt-4" data-i18n="daProjects">Data Analyst</h3>
+
+            <!-- Uber Dashboard (Data Analyst) -->
+            <article class="project project-right">
+              <div class="project-content">
+                <h4 class="project-title">Uber Dashboard – Data Visualisation & Pilotage de la performance</h4>
+
+                <div class="proj-text">
+                  <p><strong>Contexte & enjeux :</strong><br>
+                    Dans des environnements opérationnels à fort volume de données, la data visualisation est essentielle pour transformer l’information brute en indicateurs décisionnels exploitables.
+                  </p>
+                  <p><strong>Approche & réalisation :</strong><br>
+                    J’ai conçu un tableau de bord Power BI pour suivre l’activité à travers des KPI clés (réservations, revenus, annulations, satisfaction), en structurant le modèle de données et les mesures.
+                  </p>
+                  <p><strong>Apports & résultats :</strong><br>
+                    Le dashboard offre une lecture synthétique et dynamique de la performance et facilite l’analyse temporelle et la segmentation des résultats.
+                  </p>
+                </div>
+
+                <div class="tools-row">
+                  <span class="tool">Power BI</span>
+                  <span class="tool">DAX</span>
+                  <span class="tool">Data Visualisation</span>
+                  <span class="tool">KPI</span>
+                </div>
+
+                <a class="btn btn-sm btn-outline-primary mt-2"
+                   href="https://drive.google.com/file/d/1aMobTEHTtnjC5mhkAMS8aklLRp7jfkLY/view"
+                   target="_blank" rel="noopener" data-i18n="viewPDF">
+                  Voir le PDF
+                </a>
+              </div>
+
+              <div class="project-image">
+                <img src="img/Uber_dashboard.jpg" alt="Uber Dashboard Power BI">
+              </div>
+            </article>
+
+            <hr class="divider my-4">
+
+            <!-- Végétalisation -->
+            <article class="project project-right">
+              <div class="project-content">
+                <h4 class="project-title">
+                  <a href="https://github.com/MBASSIE-ISRAEL/Analyse_de_donnees-du_vert_chez_moi" target="_blank" rel="noopener">
+                    Analyse de la végétalisation à Paris
+                  </a>
+                </h4>
+
+                <div class="proj-text">
+                  <p><strong>Contexte & enjeux :</strong><br>
+                    La végétalisation urbaine est un levier d’adaptation climatique (îlots de chaleur, qualité de l’air) et un indicateur clé de bien-être urbain.
+                  </p>
+                  <p><strong>Approche & réalisation :</strong><br>
+                    J’ai exploité des données open data pour analyser la répartition de la végétation par zones et arrondissements, en assurant nettoyage, structuration et analyses descriptives.
+                  </p>
+                  <p><strong>Apports & résultats :</strong><br>
+                    Mise en évidence de disparités territoriales et identification de zones prioritaires pour des actions de verdissement ciblées.
+                  </p>
+                </div>
+
+                <div class="tools-row">
+                  <span class="tool">Python</span>
+                  <span class="tool">Pandas</span>
+                  <span class="tool">Matplotlib</span>
+                  <span class="tool">Seaborn</span>
+                </div>
+
+                <a class="btn btn-sm btn-outline-primary mt-2"
+                   href="https://github.com/MBASSIE-ISRAEL/Analyse_de_donnees-du_vert_chez_moi"
+                   target="_blank" rel="noopener" data-i18n="viewGitHub">
+                  Voir sur GitHub
+                </a>
+              </div>
+
+              <div class="project-image">
+                <img src="img/du_vert_chez_moi.jpg" alt="Analyse de la végétalisation à Paris">
+              </div>
+            </article>
+
+            <hr class="divider my-4">
+
+            <!-- Scraping Books -->
+            <article class="project project-right">
+              <div class="project-content">
+                <h4 class="project-title">
+                  <a href="https://github.com/MBASSIE-ISRAEL/Scrapping_books" target="_blank" rel="noopener">
+                    Scraping Books – Analyse de données issues du web
+                  </a>
+                </h4>
+
+                <div class="proj-text">
+                  <p><strong>Contexte & enjeux :</strong><br>
+                    Les données web sont une source importante pour analyser des tendances, à condition de pouvoir les collecter et structurer efficacement.
+                  </p>
+                  <p><strong>Approche & réalisation :</strong><br>
+                    J’ai développé un pipeline de scraping pour extraire catégories, prix et notations, puis construit un dataset nettoyé et prêt pour l’analyse.
+                  </p>
+                  <p><strong>Apports & résultats :</strong><br>
+                    Analyse comparative des segments, distributions de prix et notes, et production de visualisations synthétiques.
+                  </p>
+                </div>
+
+                <div class="tools-row">
+                  <span class="tool">Python</span>
+                  <span class="tool">BeautifulSoup</span>
+                  <span class="tool">Pandas</span>
+                  <span class="tool">Matplotlib</span>
+                </div>
+
+                <a class="btn btn-sm btn-outline-primary mt-2"
+                   href="https://github.com/MBASSIE-ISRAEL/Scrapping_books"
+                   target="_blank" rel="noopener" data-i18n="viewGitHub">
+                  Voir sur GitHub
+                </a>
+              </div>
+
+              <div class="project-image">
+                <img src="img/scrapping_books.jpg" alt="Scraping Books">
+              </div>
+            </article>
+
+            <hr class="divider my-4">
+
+            <h3 class="subsection-title" data-i18n="dsProjects">Data Science</h3>
+
+            <!-- Détection d’engins -->
+            <article class="project project-right">
+              <div class="project-content">
+                <h4 class="project-title">
+                  <a href="https://github.com/MBASSIE-ISRAEL/Detection-engins" target="_blank" rel="noopener">
+                    Détection d’engins – Vision par ordinateur
+                  </a>
+                </h4>
+
+                <div class="proj-text">
+                  <p><strong>Contexte & enjeux :</strong><br>
+                    La reconnaissance d’objets est essentielle pour des applications en mobilité, sécurité et analyse vidéo, où l’automatisation améliore rapidité et fiabilité.
+                  </p>
+                  <p><strong>Approche & réalisation :</strong><br>
+                    J’ai constitué un dataset, entraîné un modèle de deep learning et évalué ses performances pour détecter et classifier des véhicules.
+                  </p>
+                  <p><strong>Apports & résultats :</strong><br>
+                    Modèle capable d’identifier automatiquement différents engins avec un bon niveau de précision sur des images réelles.
+                  </p>
+                </div>
+
+                <div class="tools-row">
+                  <span class="tool">Python</span>
+                  <span class="tool">TensorFlow</span>
+                  <span class="tool">OpenCV</span>
+                  <span class="tool">Computer Vision</span>
+                </div>
+
+                <a class="btn btn-sm btn-outline-primary mt-2"
+                   href="https://github.com/MBASSIE-ISRAEL/Detection-engins"
+                   target="_blank" rel="noopener" data-i18n="viewGitHub">
+                  Voir sur GitHub
+                </a>
+              </div>
+
+              <div class="project-image">
+                <img src="img/detection_engins.jpg" alt="Détection d’engins">
+              </div>
+            </article>
+
+            <hr class="divider my-4">
+
+            <!-- Chatbot Raven Fox -->
+            <article class="project project-right">
+              <div class="project-content">
+                <h4 class="project-title">
+                  <a href="https://github.com/MBASSIE-ISRAEL/chatbot_raven_fox" target="_blank" rel="noopener">
+                    Chatbot Raven Fox – Assistant intelligent
+                  </a>
+                </h4>
+
+                <div class="proj-text">
+                  <p><strong>Contexte & enjeux :</strong><br>
+                    Les assistants conversationnels améliorent l’accessibilité en fournissant une aide immédiate et contextualisée, notamment pour des besoins spécifiques.
+                  </p>
+                  <p><strong>Approche & réalisation :</strong><br>
+                    J’ai conçu un pipeline NLP et intégré un modèle de langage, avec une interface simple et accessible pour un usage terrain.
+                  </p>
+                  <p><strong>Apports & résultats :</strong><br>
+                    Prototype fonctionnel répondant à des requêtes ciblées, base solide pour des évolutions (RAG, données temps réel, géolocalisation).
+                  </p>
+                </div>
+
+                <div class="tools-row">
+                  <span class="tool">Python</span>
+                  <span class="tool">LLM</span>
+                  <span class="tool">Streamlit</span>
+                  <span class="tool">Hugging Face</span>
+                </div>
+
+                <a class="btn btn-sm btn-outline-primary mt-2"
+                   href="https://github.com/MBASSIE-ISRAEL/chatbot_raven_fox"
+                   target="_blank" rel="noopener" data-i18n="viewGitHub">
+                  Voir sur GitHub
+                </a>
+              </div>
+
+              <div class="project-image">
+                <img src="img/chatbot_raven_fox.jpg" alt="Chatbot Raven Fox">
+              </div>
+            </article>
+
+            <hr class="divider my-4">
+
+            <!-- Risque Crédit -->
+            <article class="project project-right">
+              <div class="project-content">
+                <h4 class="project-title">
+                  <a href="https://github.com/MBASSIE-ISRAEL/risque_credits" target="_blank" rel="noopener">
+                    Risque Crédit – Modélisation prédictive
+                  </a>
+                </h4>
+
+                <div class="proj-text">
+                  <p><strong>Contexte & enjeux :</strong><br>
+                    Anticiper le risque de défaut est crucial pour sécuriser les décisions d’octroi et optimiser la gestion du risque.
+                  </p>
+                  <p><strong>Approche & réalisation :</strong><br>
+                    J’ai construit un modèle de scoring : préparation, feature engineering, modèles supervisés, évaluation et déploiement via une interface.
+                  </p>
+                  <p><strong>Apports & résultats :</strong><br>
+                    Modèle performant permettant d’estimer la probabilité de défaut et de simuler une décision dans un flux machine learning complet.
+                  </p>
+                </div>
+
+                <div class="tools-row">
+                  <span class="tool">Python</span>
+                  <span class="tool">Scikit-learn</span>
+                  <span class="tool">Pandas</span>
+                  <span class="tool">Streamlit</span>
+                </div>
+
+                <a class="btn btn-sm btn-outline-primary mt-2"
+                   href="https://github.com/MBASSIE-ISRAEL/risque_credits"
+                   target="_blank" rel="noopener" data-i18n="viewGitHub">
+                  Voir sur GitHub
+                </a>
+              </div>
+
+              <div class="project-image">
+                <img src="img/crédit_form.jpg" alt="Risque Crédit">
+              </div>
+            </article>
           </section>
 
           <p class="text-center text-muted small mt-4 mb-0" data-i18n="quote">
