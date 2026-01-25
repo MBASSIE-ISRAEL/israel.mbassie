@@ -274,3 +274,88 @@
     applyTheme(next);
   });
 })();
+
+// ==============================
+// Umami: tracking complet des clics sur liens
+// ==============================
+(function () {
+  // Vérifie que Umami est bien chargé
+  function hasUmami() {
+    return typeof window.umami !== "undefined" && typeof window.umami.track === "function";
+  }
+
+  // Normalise texte (évite events illisibles)
+  function cleanText(s) {
+    return (s || "")
+      .replace(/\s+/g, " ")
+      .trim()
+      .slice(0, 80);
+  }
+
+  // Trouver une "section" logique (id de section, nav, header, footer, etc.)
+  function getSection(el) {
+    const section = el.closest("section[id]");
+    if (section && section.id) return section.id;
+
+    if (el.closest("header")) return "header";
+    if (el.closest("nav")) return "nav";
+    if (el.closest("footer")) return "footer";
+    if (el.closest("aside")) return "sidebar";
+
+    return "page";
+  }
+
+  // Résout URL absolute
+  function toAbsoluteUrl(href) {
+    try {
+      return new URL(href, window.location.href).toString();
+    } catch {
+      return href;
+    }
+  }
+
+  // Émet un event Umami
+  function trackLinkClick(a) {
+    const href = a.getAttribute("href") || "";
+    if (!href || href.startsWith("#") || href.startsWith("javascript:")) return;
+
+    const abs = toAbsoluteUrl(href);
+
+    // Si tu veux exclure certains liens, fais-le ici:
+    // if (abs.includes("cdn.jsdelivr.net")) return;
+
+    let domain = "";
+    try {
+      domain = new URL(abs).hostname;
+    } catch {
+      domain = "";
+    }
+
+    const payload = {
+      section: getSection(a),
+      text: cleanText(a.textContent) || cleanText(a.getAttribute("aria-label")) || "link",
+      href: abs,
+      domain: domain,
+      isExternal: domain && domain !== window.location.hostname ? "1" : "0",
+    };
+
+    // Event unique et lisible par type
+    // (tu peux changer "click_link" si tu veux)
+    window.umami.track("click_link", payload);
+  }
+
+  // Délégation : capte tous les clics sur <a>
+  document.addEventListener("click", function (e) {
+    const a = e.target.closest && e.target.closest("a");
+    if (!a) return;
+
+    // Laisse priorité aux liens avec data-umami-event (si tu en ajoutes ponctuellement)
+    if (a.hasAttribute("data-umami-event")) return;
+
+    // Attend Umami si le script charge un peu après
+    if (!hasUmami()) return;
+
+    trackLinkClick(a);
+  });
+})();
+
