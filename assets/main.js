@@ -111,11 +111,12 @@
       p_credit_ctx: "Anticiper la probabilité de défaut est essentiel pour sécuriser l’octroi de crédit et optimiser la gestion du risque.",
       p_credit_meth: "J’ai construit un modèle de scoring : préparation des données, feature engineering, modèles supervisés, évaluation et mise à disposition via une interface de démonstration.",
       p_credit_res: "Le pipeline permet d’estimer efficacement la probabilité de défaut et illustre une approche machine learning orientée décision.",
-      // Projets - Economic
-      p_econ_title: "Panorama économique & démographique mondial (Tableau)",
-      p_econ_ctx: "Synthétiser des indicateurs macro et démographiques permet de comparer les régions/pays et d’orienter l’analyse (PIB, espérance de vie, chômage, inflation).",
-      p_econ_meth: "Dashboard interactif Tableau construit à partir de deux sources de données (World Bank + WDI) avec préparation, jointures et filtres (année, région, pays).",
-      p_econ_res: "Vue consolidée des KPI (PIB/hab, PIB global, espérance de vie, inflation) et analyses visuelles (cartographie, corrélations, comparaisons régionales).",
+      // Projects - Economic Dashboard
+      p_econ_title: "Panorama économique & démographique mondial",
+      p_econ_ctx: "L’analyse des indicateurs macroéconomiques mondiaux permet de comparer les niveaux de développement, d’identifier les écarts régionaux et de mieux comprendre les relations entre richesse, population et qualité de vie.",
+      p_econ_meth: "J’ai combiné deux sources de données issues de la Banque mondiale, réalisé nettoyage et harmonisation, puis conçu un dashboard interactif Tableau intégrant cartes, graphiques comparatifs et filtres dynamiques.",
+      p_econ_res: "Le tableau de bord offre une lecture interactive des tendances économiques mondiales, met en évidence les corrélations entre développement et richesse, et facilite l’analyse comparative par pays et région.",
+
 
     },
 
@@ -216,10 +217,11 @@
       p_credit_meth: "I built a scoring model pipeline: data preparation, feature engineering, supervised modeling, evaluation and an interactive demo interface.",
       p_credit_res: "The pipeline estimates default probability effectively and illustrates a decision-oriented machine learning approach.",
       
-      p_econ_title: "Global Economic & Demographic Dashboard (Tableau)",
-      p_econ_ctx: "Bringing macroeconomic and demographic indicators together helps compare regions/countries and support analysis (GDP, life expectancy, unemployment, inflation).",
-      p_econ_meth: "Interactive Tableau dashboard built from two data sources (World Bank + WDI) with preparation, joins and filters (year, region, country).",
-      p_econ_res: "Consolidated KPI view (GDP/capita, global GDP, life expectancy, inflation) and visual analyses (map, correlations, regional comparisons).",
+      p_econ_title: "Global Economic & Demographic Dashboard",
+      p_econ_ctx: "Analyzing global macroeconomic indicators helps compare development levels, identify regional disparities and better understand the relationship between wealth, population and quality of life.",
+      p_econ_meth: "I merged two World Bank datasets, performed cleaning and harmonization, then built an interactive Tableau dashboard including maps, comparative charts and dynamic filters.",
+      p_econ_res: "The dashboard provides an interactive global economic overview, highlights development correlations and enables efficient country and region comparison.",
+
 
     }
   };
